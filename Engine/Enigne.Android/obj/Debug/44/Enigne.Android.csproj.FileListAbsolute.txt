@@ -1,0 +1,9 @@
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\44\MonoAndroid,Version=v4.4.AssemblyAttributes.cs
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\44\build.props
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\44\adb.props
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\44\Enigne.Android.csprojAssemblyReference.cache
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\44\stamp\_BuildLibraryImportsCache.stamp
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\44\res.flag
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\44\R.txt
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\44\R.cs.flag
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\44\Enigne.Android.csproj.CoreCompileInputs.cache

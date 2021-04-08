@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BrWK26NDKZIt2v+Bx4FX9948slL0P+MvYgrc30dVR9LZ8NDcu2dMx0zhahWTIQTjgf++FP1s6Qwnip6OA9vpSQ==",
+  "success": true,
+  "projectFilePath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Enigne.Android\\Enigne.Android.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.framework.android\\3.8.0.1641\\monogame.framework.android.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,2 @@
+resources;obj\Release\100\res\values\strings.xml
+string;obj\Release\100\res\values\strings.xml
