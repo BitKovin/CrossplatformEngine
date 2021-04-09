@@ -2,12 +2,6 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
-      "MonoGame.Framework.Android/3.8.0.1641": {
-        "type": "package",
-        "build": {
-          "build/MonoGame.Framework.Android.targets": {}
-        }
-      },
       "MonoGame.Framework.DesktopGL/3.8.0.1641": {
         "type": "package",
         "compile": {
@@ -57,21 +51,6 @@
     }
   },
   "libraries": {
-    "MonoGame.Framework.Android/3.8.0.1641": {
-      "sha512": "7o2oaU3OS6/5EdFhoo+/rOC3+u4AMYiIv9M1FcaB0QM9JbN2PBHKIQqFovWP02gk8mP2DKHND+tMPlI97tBVHQ==",
-      "type": "package",
-      "path": "monogame.framework.android/3.8.0.1641",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "build/MonoGame.Framework.Android.targets",
-        "lib/monoandroid90/MonoGame.Framework.dll",
-        "lib/monoandroid90/MonoGame.Framework.xml",
-        "monogame.framework.android.3.8.0.1641.nupkg.sha512",
-        "monogame.framework.android.nuspec"
-      ]
-    },
     "MonoGame.Framework.DesktopGL/3.8.0.1641": {
       "sha512": "rJQlrlHQbnOECYV6EcQ8GlGRQ2lzPTroXQcyyOZ0ki+BQRSJEN2zVBm9skqLiXya348aGAfTSSGTaSKjAy9NaA==",
       "type": "package",
@@ -100,7 +79,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "MonoGame.Framework.Android >= 3.8.0.1641",
       "MonoGame.Framework.DesktopGL >= 3.8.0.1641"
     ]
   },
@@ -153,10 +131,6 @@
       "netstandard2.1": {
         "targetAlias": "netstandard2.1",
         "dependencies": {
-          "MonoGame.Framework.Android": {
-            "target": "Package",
-            "version": "[3.8.0.1641, )"
-          },
           "MonoGame.Framework.DesktopGL": {
             "suppressParent": "All",
             "target": "Package",

@@ -28,9 +28,6 @@
       "Engine/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
-        "dependencies": {
-          "MonoGame.Framework.Android": "3.8.0.1641"
-        },
         "compile": {
           "bin/placeholder/Engine.dll": {}
         },

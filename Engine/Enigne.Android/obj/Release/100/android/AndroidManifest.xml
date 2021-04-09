@@ -10,7 +10,7 @@
   <uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
   <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
   <application android:label="Enigne.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon">
-    <activity android:alwaysRetainTaskState="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleInstance" android:screenOrientation="landscape" android:name="crc6481457e95bb4e31f0.Activity1">
+    <activity android:alwaysRetainTaskState="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleInstance" android:screenOrientation="sensorLandscape" android:name="crc6481457e95bb4e31f0.Activity1">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

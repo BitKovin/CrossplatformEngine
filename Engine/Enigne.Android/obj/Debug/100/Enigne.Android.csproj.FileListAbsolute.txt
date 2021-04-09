@@ -129,3 +129,4 @@ F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\stamp\_Con
 F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\Enigne.Android.csprojAssemblyReference.cache

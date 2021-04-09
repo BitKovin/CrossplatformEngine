@@ -7,7 +7,7 @@
 .L.compressed_assembly_descriptors:
 	/* 0: Engine.dll */
 	/* uncompressed_file_size */
-	.long	4608
+	.long	8192
 	/* loaded */
 	.byte	0
 	/* data */

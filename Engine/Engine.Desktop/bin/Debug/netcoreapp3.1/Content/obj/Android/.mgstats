@@ -1,0 +1,2 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/bin/Debug/netcoreapp3.1/Content/test.png","F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/bin/Debug/netcoreapp3.1/Content/bin/Android/test.xnb","TextureProcessor","Texture2DContent",379,6085,0,1150253

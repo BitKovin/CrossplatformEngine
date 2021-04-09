@@ -47,10 +47,6 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
-            "MonoGame.Framework.Android": {
-              "target": "Package",
-              "version": "[3.8.0.1641, )"
-            },
             "MonoGame.Framework.DesktopGL": {
               "suppressParent": "All",
               "target": "Package",

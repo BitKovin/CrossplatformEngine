@@ -9,12 +9,6 @@
           "build/MonoGame.Content.Builder.Task.targets": {}
         }
       },
-      "MonoGame.Framework.Android/3.8.0.1641": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "MonoGame.Framework.DesktopGL/3.8.0.1641": {
         "type": "package",
         "compile": {
@@ -64,9 +58,6 @@
       "Engine/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
-        "dependencies": {
-          "MonoGame.Framework.Android": "3.8.0.1641"
-        },
         "compile": {
           "bin/placeholder/Engine.dll": {}
         },
@@ -158,21 +149,6 @@
         "tools/netcoreapp3.1/any/x64/soft_oal.dll",
         "tools/netcoreapp3.1/any/x86/SDL2.dll",
         "tools/netcoreapp3.1/any/x86/soft_oal.dll"
-      ]
-    },
-    "MonoGame.Framework.Android/3.8.0.1641": {
-      "sha512": "7o2oaU3OS6/5EdFhoo+/rOC3+u4AMYiIv9M1FcaB0QM9JbN2PBHKIQqFovWP02gk8mP2DKHND+tMPlI97tBVHQ==",
-      "type": "package",
-      "path": "monogame.framework.android/3.8.0.1641",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "build/MonoGame.Framework.Android.targets",
-        "lib/monoandroid90/MonoGame.Framework.dll",
-        "lib/monoandroid90/MonoGame.Framework.xml",
-        "monogame.framework.android.3.8.0.1641.nupkg.sha512",
-        "monogame.framework.android.nuspec"
       ]
     },
     "MonoGame.Framework.DesktopGL/3.8.0.1641": {

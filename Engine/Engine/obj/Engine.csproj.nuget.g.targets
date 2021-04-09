@@ -5,6 +5,5 @@
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)monogame.framework.desktopgl\3.8.0.1641\build\MonoGame.Framework.DesktopGL.targets" Condition="Exists('$(NuGetPackageRoot)monogame.framework.desktopgl\3.8.0.1641\build\MonoGame.Framework.DesktopGL.targets')" />
-    <Import Project="$(NuGetPackageRoot)monogame.framework.android\3.8.0.1641\build\MonoGame.Framework.Android.targets" Condition="Exists('$(NuGetPackageRoot)monogame.framework.android\3.8.0.1641\build\MonoGame.Framework.Android.targets')" />
   </ImportGroup>
 </Project>

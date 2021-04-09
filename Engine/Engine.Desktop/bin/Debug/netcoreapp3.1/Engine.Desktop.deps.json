@@ -17,7 +17,6 @@
         }
       },
       "MonoGame.Content.Builder.Task/3.8.0.1641": {},
-      "MonoGame.Framework.Android/3.8.0.1641": {},
       "MonoGame.Framework.DesktopGL/3.8.0.1641": {
         "runtime": {
           "lib/netstandard2.0/MonoGame.Framework.dll": {
@@ -69,9 +68,6 @@
         }
       },
       "Engine/1.0.0": {
-        "dependencies": {
-          "MonoGame.Framework.Android": "3.8.0.1641"
-        },
         "runtime": {
           "Engine.dll": {}
         }
@@ -90,13 +86,6 @@
       "sha512": "sha512-oHA60q9MhkqGnSiJlXosdynD400sQ/j1Ef+0XkJYIQT4Io9RQ6Zk8i0vjpnIbQ0PgsoaQN3IRYjNzkhqq3uUGA==",
       "path": "monogame.content.builder.task/3.8.0.1641",
       "hashPath": "monogame.content.builder.task.3.8.0.1641.nupkg.sha512"
-    },
-    "MonoGame.Framework.Android/3.8.0.1641": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7o2oaU3OS6/5EdFhoo+/rOC3+u4AMYiIv9M1FcaB0QM9JbN2PBHKIQqFovWP02gk8mP2DKHND+tMPlI97tBVHQ==",
-      "path": "monogame.framework.android/3.8.0.1641",
-      "hashPath": "monogame.framework.android.3.8.0.1641.nupkg.sha512"
     },
     "MonoGame.Framework.DesktopGL/3.8.0.1641": {
       "type": "package",

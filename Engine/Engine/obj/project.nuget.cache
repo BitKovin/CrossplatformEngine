@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "FNAQaITwtJyAYggk5NPvZd2hyu8xN3B5Eh+Z4TOsqh4SJr02PUmTClYFgEAapHNdqzbYYFtELtYD0ceCMiyCbw==",
+  "dgSpecHash": "FWGP0aEHw05ck8t2MqYfudEKY1RcaD/E7OKVvkwBJtvZBi27FkNLhA9Qg6Q0irb/0oMVifa2Bk4yif+MabX1zw==",
   "success": true,
   "projectFilePath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\bogda\\.nuget\\packages\\monogame.framework.android\\3.8.0.1641\\monogame.framework.android.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\bogda\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
   ],
   "logs": []
