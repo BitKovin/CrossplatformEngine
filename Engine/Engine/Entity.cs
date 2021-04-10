@@ -24,7 +24,7 @@ namespace Engine
         public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             sprite.Position = Position;
-            sprite.Origin = new Vector2(-sprite.texture.Width/2,-sprite.texture.Height/2);
+            sprite.Origin = new Vector2(sprite.texture.Width/2,sprite.texture.Height/2);
 
             sprite.Draw(gameTime, spriteBatch);
         }

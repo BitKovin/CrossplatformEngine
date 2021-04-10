@@ -72,6 +72,11 @@ namespace Engine.Entities
                 input.Normalize();
                 Position += input * speed * Time.deltaTime;
             }
+
+
+            if (Keyboard.GetState().IsKeyDown(Keys.R))
+                sprite.Rotation += 10 * Time.deltaTime;
+
         }
 
     }
