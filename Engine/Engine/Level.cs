@@ -20,7 +20,8 @@ namespace Engine
 
         public virtual void Update()
         {
-
+            foreach (Entity entity in entities)
+                entity.Update();
         }
 
     }

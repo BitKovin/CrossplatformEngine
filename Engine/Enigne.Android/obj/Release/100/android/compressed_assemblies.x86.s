@@ -7,7 +7,7 @@
 .L.compressed_assembly_descriptors:
 	/* 0: Engine.dll */
 	/* uncompressed_file_size */
-	.long	8192
+	.long	11264
 	/* loaded */
 	.byte	0
 	/* data */
@@ -34,7 +34,7 @@
 
 	/* 3: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.long	1079296
+	.long	1080320
 	/* loaded */
 	.byte	0
 	/* data */

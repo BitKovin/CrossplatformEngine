@@ -17,17 +17,20 @@ namespace Enigne.Android
     )]
     public class Activity1 : AndroidGameActivity
     {
-        private Engine.Game1 _game;
+        private Engine.GameMain _game;
         private View _view;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            _game = new Engine.Game1();
+
+            _game = new Engine.GameMain();
+            Engine.GameMain.platform = Engine.Platform.Mobile;
             _view = _game.Services.GetService(typeof(View)) as View;
 
             SetContentView(_view);
+            _view.SystemUiVisibility = (StatusBarVisibility)(SystemUiFlags.LayoutStable | SystemUiFlags.LayoutHideNavigation | SystemUiFlags.LayoutFullscreen | SystemUiFlags.HideNavigation | SystemUiFlags.Fullscreen | SystemUiFlags.ImmersiveSticky);
             _game.Run();
         }
     }

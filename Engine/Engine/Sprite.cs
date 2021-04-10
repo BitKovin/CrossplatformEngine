@@ -26,7 +26,6 @@ namespace Engine
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            Console.WriteLine("draw");
             spriteBatch.Draw(texture, Position+Origin, null, Color.White, Rotation, new Vector2(), Scale, effects, depth);
         }
 

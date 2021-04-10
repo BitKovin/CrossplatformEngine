@@ -7,7 +7,7 @@ namespace Engine.Desktop
         [STAThread]
         static void Main()
         {
-            using (var game = new Engine.Game1())
+            using (var game = new Engine.GameMain())
                 game.Run();
         }
     }
