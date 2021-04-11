@@ -49,18 +49,22 @@ namespace Engine
             base.Initialize();
 
             curentLevel.entities.Add(new Player());
+            Box box = new Box();
+            box.Position = new Vector2(100);
+            curentLevel.entities.Add(box);
 
             this.Window.AllowUserResizing = true;
-            _graphics.PreferredBackBufferWidth = 1280;  // set this value to the desired width of your window
-            _graphics.PreferredBackBufferHeight = 720;   // set this value to the desired height of your window
-            _graphics.ApplyChanges();
-
+            if (platform == Platform.Desktop)
+            {
+                _graphics.PreferredBackBufferWidth = 1280;  // set this value to the desired width of your window
+                _graphics.PreferredBackBufferHeight = 720;   // set this value to the desired height of your window
+            }
             this.IsFixedTimeStep = false;
             _graphics.SynchronizeWithVerticalRetrace = false;
 
-            if (platform == Platform.Mobile)
-                _graphics.IsFullScreen = true;
-            _graphics.ApplyChanges();
+            //if (platform == Platform.Mobile)
+                //_graphics.IsFullScreen = true;
+            //_graphics.ApplyChanges();
         }
 
         protected override void LoadContent()

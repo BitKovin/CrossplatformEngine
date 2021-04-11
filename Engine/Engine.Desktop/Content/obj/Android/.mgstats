@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/block.png","F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/bin/Android/block.xnb","TextureProcessor","Texture2DContent",194,10085,0,4465715
+"F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/test.png","F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/bin/Android/test.xnb","TextureProcessor","Texture2DContent",2381,6085,0,0020033

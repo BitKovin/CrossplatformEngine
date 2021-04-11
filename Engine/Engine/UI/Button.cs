@@ -41,13 +41,9 @@ namespace Engine.UI
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             Rectangle mainRectangle = new Rectangle();
-            mainRectangle.Location = new Point((int)position.X, (int)position.Y);
+            mainRectangle.Location = new Point((int)position.X+ (int)origin.X, (int)position.Y+ (int)origin.Y);
             mainRectangle.Size = new Point((int)size.X, (int)size.Y);
-            Color color = hoveringColor;
-            if (hovering)
-            {
-                color = hoveringColor;
-            } 
+
             spriteBatch.Draw(tex, mainRectangle, hovering ? hoveringColor : baseColor);
 
             base.Draw(gameTime, spriteBatch);

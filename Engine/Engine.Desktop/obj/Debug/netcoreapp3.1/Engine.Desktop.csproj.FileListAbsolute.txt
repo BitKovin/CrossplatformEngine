@@ -24,3 +24,4 @@ F:\GitHub\CrossplatformGameEngine\Engine\Engine.Desktop\obj\Debug\netcoreapp3.1\
 F:\GitHub\CrossplatformGameEngine\Engine\Engine.Desktop\bin\Debug\netcoreapp3.1\Engine.dll
 F:\GitHub\CrossplatformGameEngine\Engine\Engine.Desktop\bin\Debug\netcoreapp3.1\Engine.pdb
 F:\GitHub\CrossplatformGameEngine\Engine\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\test.xnb
+F:\GitHub\CrossplatformGameEngine\Engine\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\block.xnb
