@@ -109,6 +109,7 @@ namespace Engine.Entities
                 {
                     Position -= new Vector2(0, (input * speed * Time.deltaTime).Y);
                 }
+                UpdateCollision();
 
             }
 

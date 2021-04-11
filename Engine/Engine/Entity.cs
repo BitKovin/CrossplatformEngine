@@ -36,10 +36,10 @@ namespace Engine
             tex.SetData(new Color[] { Color.White });
 
             Rectangle mainRectangle = new Rectangle();
-            mainRectangle.Location = collision.position;
+            mainRectangle.Location = collision.position.ToPoint();
             mainRectangle.Size = collision.size;
 
-            //spriteBatch.Draw(tex, mainRectangle, Color.White);
+            spriteBatch.Draw(tex, mainRectangle, new Color(255, 255, 255,100));
 
         }
 
@@ -55,7 +55,7 @@ namespace Engine
 
         protected void UpdateCollision()
         {
-            collision.position = (Position - new Vector2(sprite.Origin.X, sprite.Origin.Y)*2).ToPoint();
+            collision.position = (Position - new Vector2(sprite.Origin.X, sprite.Origin.Y)*2);
         }
 
 

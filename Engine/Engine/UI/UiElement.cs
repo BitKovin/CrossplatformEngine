@@ -88,10 +88,10 @@ namespace Engine.UI
             {
 
                 col.size = new Point((int)size.X, (int)size.Y);
-                col.position = new Point((int)position.X + (int)origin.X, (int)position.Y + (int)origin.Y);
+                col.position = new Vector2((int)position.X + (int)origin.X, (int)position.Y + (int)origin.Y);
                 Collision mouseCol = new Collision();
                 mouseCol.size = new Point(2, 2);
-                mouseCol.position = new Point((int)Input.MousePos.X, (int)Input.MousePos.Y);
+                mouseCol.position = new Vector2((int)Input.MousePos.X, (int)Input.MousePos.Y);
                 hovering = Collision.MakeCollionTest(col, mouseCol);
             }
             else if (GameMain.platform == Platform.Mobile)
@@ -104,10 +104,10 @@ namespace Engine.UI
                     pos = touch.Position / ScaleY;
 
                     col.size = new Point((int)size.X, (int)size.Y);
-                    col.position = new Point((int)position.X+ (int)origin.X, (int)position.Y+(int)origin.Y);
+                    col.position = new Vector2((int)position.X+ (int)origin.X, (int)position.Y+(int)origin.Y);
                     Collision mouseCol = new Collision();
                     mouseCol.size = new Point(2, 2);
-                    mouseCol.position = new Point((int)pos.X, (int)pos.Y);
+                    mouseCol.position = new Vector2((int)pos.X, (int)pos.Y);
                     if (Collision.MakeCollionTest(col, mouseCol))
                         hovering = true;
 

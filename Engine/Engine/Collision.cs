@@ -8,14 +8,18 @@ namespace Engine
     public class Collision
     {
 
-        public Point position;
+        public Vector2 position;
         public Point size;
         public Entity owner;
+
+        const int Acuracy = 500;
+
         public static bool MakeCollionTest(Collision col1, Collision col2)
         {
-
-            Rectangle Col1 = new Rectangle(new Point(col1.position.X, col1.position.Y), new Point(col1.size.X, col1.size.Y));
-            Rectangle Col2 = new Rectangle(new Point(col2.position.X, col2.position.Y), new Point(col2.size.X, col2.size.Y));
+            Point pos1 = new Point((int)(col1.position.X* Acuracy), (int)(col1.position.Y * Acuracy));
+            Point pos2 = new Point((int)(col2.position.X * Acuracy), (int)(col2.position.Y * Acuracy));
+            Rectangle Col1 = new Rectangle(new Point(pos1.X, pos1.Y), new Point(col1.size.X* Acuracy, col1.size.Y * Acuracy));
+            Rectangle Col2 = new Rectangle(new Point(pos2.X, pos2.Y), new Point(col2.size.X * Acuracy, col2.size.Y * Acuracy));
 
             return Col1.Intersects(Col2);
 
