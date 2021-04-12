@@ -25,9 +25,21 @@
           "build/MonoGame.Framework.Android.targets": {}
         }
       },
+      "Box2DX/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Box2DX.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Box2DX.dll": {}
+        }
+      },
       "Engine/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Box2DX": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Engine.dll": {}
         },
@@ -135,6 +147,11 @@
         "monogame.framework.android.3.8.0.1641.nupkg.sha512",
         "monogame.framework.android.nuspec"
       ]
+    },
+    "Box2DX/1.0.0": {
+      "type": "project",
+      "path": "../Box2DX/Box2DX.csproj",
+      "msbuildProject": "../Box2DX/Box2DX.csproj"
     },
     "Engine/1.0.0": {
       "type": "project",

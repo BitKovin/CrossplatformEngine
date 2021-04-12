@@ -48,6 +48,8 @@ namespace Engine
 
             base.Initialize();
 
+            Physics.Physics.Init();
+
             curentLevel.entities.Add(new Player());
             Box box = new Box();
             box.Position = new Vector2(100);
@@ -90,6 +92,8 @@ namespace Engine
             Input.Update();
 
             curentLevel.Update();
+
+            Physics.Physics.Update();
 
             Camera.Update();
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/block.png</SourceFile>
-  <SourceTime>2021-04-11T23:13:12.6110876+03:00</SourceTime>
+  <SourceTime>2021-04-12T09:41:40.1713277+03:00</SourceTime>
   <DestFile>F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/bin/Android/block.xnb</DestFile>
-  <DestTime>2021-04-11T23:13:23.8821433+03:00</DestTime>
+  <DestTime>2021-04-12T09:42:00.3959549+03:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2018-12-08T18:35:54+02:00</ImporterTime>
+  <ImporterTime>2020-08-10T16:17:54+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2018-12-08T18:35:54+02:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T16:17:54+03:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

@@ -4,6 +4,16 @@
     "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Enigne.Android\\Enigne.Android.csproj": {}
   },
   "projects": {
+    "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Box2DX\\Box2DX.csproj": {
+      "restore": {
+        "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Box2DX\\Box2DX.csproj",
+        "projectName": "Box2DX",
+        "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Box2DX\\Box2DX.csproj"
+      },
+      "frameworks": {
+        "net40": {}
+      }
+    },
     "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -34,7 +44,11 @@
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Box2DX\\Box2DX.csproj": {
+                "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Box2DX\\Box2DX.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

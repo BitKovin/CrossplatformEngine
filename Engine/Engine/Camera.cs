@@ -39,7 +39,7 @@ namespace Engine
 
         public static void Follow(Entity target)
         {
-            //position = target.Position;
+            position = target.Position;
         }
     }
 }

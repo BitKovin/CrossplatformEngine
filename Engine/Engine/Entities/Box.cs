@@ -18,7 +18,9 @@ namespace Engine.Entities
             sprite.Position = Position;
             sprite.Origin = new Vector2(-sprite.texture.Width / 2, -sprite.texture.Height / 2);
 
-            collision.size = new Point(50, 50);
+            collision.size = new Point(100, 100);
+
+            PhysicsBody = Physics.Physics.CreateStaticBox(100, 100, 100, 100);
 
         }
 
