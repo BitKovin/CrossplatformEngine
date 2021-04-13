@@ -130,3 +130,8 @@ F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\stamp\_Gen
 F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
 F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\Enigne.Android.csprojAssemblyReference.cache
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\bin\AnyCPU\Debug\Box2DX.dll
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\bin\AnyCPU\Debug\Box2DX.pdb
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\android\assets\Box2DX.dll
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\obj\Debug\100\android\assets\Box2DX.dll.mdb
+F:\GitHub\CrossplatformGameEngine\Engine\Enigne.Android\bin\AnyCPU\Debug\Box2DX.dll.mdb

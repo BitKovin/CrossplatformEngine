@@ -4,9 +4,11 @@
   <Platform>Android</Platform>
   <Config />
   <SourceFiles>
+    <File>F:/GitHub/CrossplatformGameEngine/Engine/Enigne.Android/Content/block.png</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine/Enigne.Android/Content/test.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

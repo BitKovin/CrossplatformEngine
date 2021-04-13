@@ -19,15 +19,15 @@ namespace Engine.Entities
         Button buttonRight = new Button();
         Button buttonRotate = new Button();
 
-        float speed = 500;
+        float speed = 1;
 
         public Player():base()
         {
 
-            PhysicsBody = Physics.Physics.CreateBox(0, 0, 50, 30, this);
+            PhysicsBody = Physics.Physics.CreateBox(0, 0, 50, 30, this,0);
             PhysicsBody.FreezeRotation();
 
-            if (GameMain.platform == Platform.Mobile||true)
+            if (GameMain.platform == Platform.Mobile)
             {
                 buttonUp = new Button();
                 buttonUp.position = new Vector2(111+50, 500);
@@ -40,7 +40,7 @@ namespace Engine.Entities
                 UiElement.main.childs.Add(buttonUpRight);
 
                 buttonUpLeft = new Button();
-                buttonUpLeft.position = new Vector2(111-71 + 50, 530);
+                buttonUpLeft.position = new Vector2(111-72 + 50, 530);
                 buttonUpLeft.size = new Vector2(70, 70);
                 UiElement.main.childs.Add(buttonUpLeft);
 
@@ -51,7 +51,7 @@ namespace Engine.Entities
                 UiElement.main.childs.Add(buttonDown);
 
                 buttonLeft = new Button();
-                buttonLeft.position = new Vector2(10 + 50, 601);
+                buttonLeft.position = new Vector2(10 + 50 - 1, 601);
                 buttonLeft.size = new Vector2(100, 100);
                 UiElement.main.childs.Add(buttonLeft);
 
@@ -69,10 +69,20 @@ namespace Engine.Entities
                 Position = new Vector2(-100);
 
             }
-            Camera.Follow(this);
+            //Camera.Follow(this);
 
             collision.size = new Point(50, 30);
 
+            GameMain.inst.Window.KeyDown += Window_KeyDown;
+
+        }
+
+        private void Window_KeyDown(object sender, InputKeyEventArgs e)
+        {
+            Console.WriteLine("key");
+
+            if(e.Key==Keys.Space)
+                PhysicsBody.ApplyForce(new Box2DX.Common.Vec2(0,-10000), PhysicsBody.GetWorldCenter());
         }
 
         public override void Start()
@@ -84,7 +94,6 @@ namespace Engine.Entities
         {
             base.Update();
 
-            Console.WriteLine(PhysicsBody.GetPosition().Y);
 
             Vector2 input = new Vector2();
 
@@ -104,7 +113,7 @@ namespace Engine.Entities
             if(input.Length()>0)
             {
 
-                PhysicsBody.SetLinearVelocity(new Box2DX.Common.Vec2((input * speed).X, (input * speed).Y));
+                PhysicsBody.SetLinearVelocity(new Box2DX.Common.Vec2((input * speed).X, PhysicsBody.GetLinearVelocity().Y));
 
                 input.Normalize();
                 for (int i = 0; i < 10; i++)
@@ -127,18 +136,20 @@ namespace Engine.Entities
             }
             else
             {
-                PhysicsBody.SetLinearVelocity(new Box2DX.Common.Vec2());
+                PhysicsBody.SetLinearVelocity(new Box2DX.Common.Vec2(0, PhysicsBody.GetLinearVelocity().Y));
             }
 
 
             if (Keyboard.GetState().IsKeyDown(Keys.R)||buttonRotate.pressing)
                 sprite.Rotation += 360 /57.2958f * Time.deltaTime;
 
-            Camera.Follow(this);
-
         }
 
-        
+        public override void LateUpdate()
+        {
+            //Camera.Follow(this);
+        }
+
 
         bool IsCollide()
         {
@@ -150,6 +161,8 @@ namespace Engine.Entities
             }
             return false;
         }
+
+
 
     }
 }

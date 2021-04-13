@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Enigne.Android.dll" comes first in this list. */
 		"Enigne.Android.dll",
+		"Box2DX.dll",
 		"Engine.dll",
 		"MonoGame.Framework.dll",
 	};

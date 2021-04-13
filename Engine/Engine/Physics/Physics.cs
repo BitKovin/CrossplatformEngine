@@ -15,7 +15,7 @@ namespace Engine.Physics
     {
         public static World world;
         public static Solver solver;
-
+        const float PPU = 100;
         public static Vector2 gravity { set { world.Gravity = new Vec2(value.X, value.Y); } }
 
         public static void Init()
@@ -23,7 +23,7 @@ namespace Engine.Physics
             AABB aabb = new AABB();
             aabb.LowerBound.Set(-100000, -10000);
             aabb.UpperBound.Set(100000,100000);
-            world = new World(aabb, new Vec2(0,-9.8f*42f*0), false);
+            world = new World(aabb, new Vec2(0,9.8f), false);
             solver = new Solver();
             world.SetContactListener(solver);
             solver.OnAdd += Solver_OnAdd;
@@ -70,7 +70,7 @@ namespace Engine.Physics
                 {
                     
                     Entity entity = list.GetUserData() as Entity;
-                    Vector2 pos = new Vector2(list.GetPosition().X, list.GetPosition().Y);
+                    Vector2 pos = new Vector2(list.GetPosition().X*PPU, list.GetPosition().Y * PPU);
                     //pos += entity.sprite.Origin*2;
                     entity.Position = pos;
                     entity.sprite.Rotation = list.GetAngle();
@@ -85,24 +85,26 @@ namespace Engine.Physics
             return body.GetAngle() * -57.2958f;
         }
 
-        public static Body CreateStaticBox(float x, float y, float sx, float sy)
+        public static Body CreateStaticBox(float x, float y, float sx, float sy, Entity entity)
         {
             BodyDef bDef = new BodyDef();
-            bDef.Position.Set(x, y);
+            bDef.Position.Set(x/PPU, y / PPU);
             bDef.Angle = 0;
             // Наш полигон который описывает вершины			
             PolygonDef pDef = new PolygonDef();
 
-            pDef.SetAsBox(sx/2f, sy/2f);
+            pDef.SetAsBox(sx/2f / PPU, sy/2f / PPU);
             // Создание самого тела
             Body body = world.CreateBody(bDef);
             body.CreateShape(pDef);
             body.IsStatic();
-            body.SetMassFromShapes();
+            MassData massData = new MassData();
+            massData.Mass = 0;
+            body.SetMass(massData);
             body.IsStatic();
-            
 
-            //body.SetUserData(entity);
+            body.SetUserData(entity);
+            body.IsStatic();
 
             return body;
         }
@@ -110,19 +112,19 @@ namespace Engine.Physics
         public static Body CreateBox(float x, float y, float sx, float sy,Entity entity)
         {
             BodyDef bDef = new BodyDef();
-            bDef.Position.Set(x, y);
+            bDef.Position.Set(x / PPU, y / PPU);
             bDef.Angle = 0;
             // Наш полигон который описывает вершины			
             PolygonDef pDef = new PolygonDef();
             pDef.Restitution = 0;
             pDef.Friction = 0.95f;
             pDef.Density = 7f;
-            pDef.SetAsBox(sx/2f, sy/2f);
+            pDef.SetAsBox(sx/2f / PPU, sy/2f / PPU);
             // Создание самого тела
             Body body = world.CreateBody(bDef);
             body.CreateShape(pDef);
-
             body.SetMassFromShapes();
+
             body.SetUserData(entity);
 
             return body;
@@ -131,14 +133,14 @@ namespace Engine.Physics
         public static Body CreateBox(float x, float y, float sx, float sy, Entity entity,float f)
         {
             BodyDef bDef = new BodyDef();
-            bDef.Position.Set(x, y);
+            bDef.Position.Set(x / PPU, y / PPU);
             bDef.Angle = 0;
             // Наш полигон который описывает вершины			
             PolygonDef pDef = new PolygonDef();
             pDef.Restitution = 0;
             pDef.Friction = f;
             pDef.Density = 200f;
-            pDef.SetAsBox(sx / 2f, sy / 2f);
+            pDef.SetAsBox(sx / 2f / PPU, sy / 2f / PPU);
             // Создание самого тела
             Body body = world.CreateBody(bDef);
             body.CreateShape(pDef);

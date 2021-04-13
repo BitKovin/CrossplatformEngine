@@ -24,5 +24,13 @@ namespace Engine
                 entity.Update();
         }
 
+
+        public virtual void LateUpdate()
+        {
+            foreach (Entity entity in entities)
+                entity.LateUpdate();
+        }
+
+
     }
 }

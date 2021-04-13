@@ -50,10 +50,13 @@ namespace Engine
 
             Physics.Physics.Init();
 
+
             curentLevel.entities.Add(new Player());
             Box box = new Box();
-            box.Position = new Vector2(100);
+            box.Position = new Vector2(0,200);
             curentLevel.entities.Add(box);
+
+            box.Start();
 
             this.Window.AllowUserResizing = true;
             if (platform == Platform.Desktop)
@@ -69,6 +72,8 @@ namespace Engine
             //_graphics.ApplyChanges();
         }
 
+
+
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
@@ -83,7 +88,7 @@ namespace Engine
 
             this.Exiting += Game1_Exiting;
 
-            Time.deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            Time.deltaTime = Math.Clamp((float)gameTime.ElapsedGameTime.TotalSeconds, 0.005f, 0.1f);
 
             ScreenHeight = GraphicsDevice.PresentationParameters.Bounds.Height;
 
@@ -95,7 +100,11 @@ namespace Engine
 
             Physics.Physics.Update();
 
+            curentLevel.LateUpdate();
+
+
             Camera.Update();
+
 
             foreach (UiElement elem in UiElement.main.childs)
                 elem.Update();

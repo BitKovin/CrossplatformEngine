@@ -35,13 +35,13 @@ namespace Engine
             sprite.Origin = new Vector2(sprite.texture.Width/2,sprite.texture.Height/2);
 
 
-            Texture2D tex = new Texture2D(GameMain.inst.GraphicsDevice, 1, 1);
+           /* Texture2D tex = new Texture2D(GameMain.inst.GraphicsDevice, 1, 1);
             tex.SetData(new Color[] { new Color(255, 255, 255, 100) });
 
             Rectangle mainRectangle = new Rectangle();
             mainRectangle.Location = collision.position.ToPoint();
             mainRectangle.Size = collision.size;
-
+*/
             //spriteBatch.Draw(tex, mainRectangle, new Color(255, 255, 255,100));
             sprite.Draw(gameTime, spriteBatch);
         }
@@ -52,6 +52,11 @@ namespace Engine
         }
 
         public virtual void Update()
+        {
+
+        }
+
+        public virtual void LateUpdate()
         {
 
         }

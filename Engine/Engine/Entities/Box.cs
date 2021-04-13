@@ -19,8 +19,14 @@ namespace Engine.Entities
             sprite.Origin = new Vector2(-sprite.texture.Width / 2, -sprite.texture.Height / 2);
 
             collision.size = new Point(100, 100);
+        }
 
-            PhysicsBody = Physics.Physics.CreateStaticBox(100, 100, 100, 100);
+
+        public override void Start()
+        {
+            base.Start();
+
+            PhysicsBody = Physics.Physics.CreateStaticBox(Position.X, Position.Y, 100, 100, this);
 
         }
 
