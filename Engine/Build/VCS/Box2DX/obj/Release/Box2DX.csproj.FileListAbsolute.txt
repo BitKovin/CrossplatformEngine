@@ -1,0 +1,6 @@
+F:\GitHub\CrossplatformGameEngine\Engine\Output\Box2DX.dll
+F:\GitHub\CrossplatformGameEngine\Engine\Output\Box2DX.pdb
+F:\GitHub\CrossplatformGameEngine\Engine\Build\VCS\Box2DX\obj\Release\Box2DX.csprojAssemblyReference.cache
+F:\GitHub\CrossplatformGameEngine\Engine\Build\VCS\Box2DX\obj\Release\Box2DX.csproj.CoreCompileInputs.cache
+F:\GitHub\CrossplatformGameEngine\Engine\Build\VCS\Box2DX\obj\Release\Box2DX.dll
+F:\GitHub\CrossplatformGameEngine\Engine\Build\VCS\Box2DX\obj\Release\Box2DX.pdb

@@ -1,9 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Enigne.Android.Enigne.Android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
-	<uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
-	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-	<uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-  <meta-data android:name="android.max_aspect" android:value="2.5" />
-	<application android:label="Enigne.Android"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Project2.Project2" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+  <application android:label="Project2"></application>
 </manifest>

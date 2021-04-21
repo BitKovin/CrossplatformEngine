@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.1/": {
       "Engine/1.0.0": {
         "dependencies": {
+          "Box2DX": "1.0.0",
           "MonoGame.Framework.DesktopGL": "3.8.0.1641"
         },
         "runtime": {
@@ -21,6 +22,11 @@
             "assemblyVersion": "3.8.0.1641",
             "fileVersion": "3.8.0.1641"
           }
+        }
+      },
+      "Box2DX/1.0.0": {
+        "runtime": {
+          "Box2DX.dll": {}
         }
       }
     }
@@ -37,6 +43,11 @@
       "sha512": "sha512-rJQlrlHQbnOECYV6EcQ8GlGRQ2lzPTroXQcyyOZ0ki+BQRSJEN2zVBm9skqLiXya348aGAfTSSGTaSKjAy9NaA==",
       "path": "monogame.framework.desktopgl/3.8.0.1641",
       "hashPath": "monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+    },
+    "Box2DX/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

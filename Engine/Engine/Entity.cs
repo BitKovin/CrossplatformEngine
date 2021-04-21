@@ -10,7 +10,7 @@ using Engine.Physics;
 
 namespace Engine
 {
-    public class Entity
+    public class Entity: IDisposable
     {
         public Vector2 Position;
         public Sprite sprite;
@@ -66,6 +66,24 @@ namespace Engine
             collision.position = Position - new Vector2(sprite.Origin.X, sprite.Origin.Y)*2;
         }
 
+        public virtual void Destroy()
+        {
+            if(PhysicsBody!=null)
+                try
+                {
+                    PhysicsBody._shapeList._isSensor = true;
+                   Physics.PhysicsManager.world.DestroyBody(PhysicsBody);
+                }
+                catch (SystemException ex)
+                {
+                    Console.WriteLine(ex);
+                }
+        }
 
+        public void Dispose()
+        {
+            // Suppress finalization.
+            GC.SuppressFinalize(this);
+        }
     }
 }

@@ -1,10 +1,11 @@
-﻿using Microsoft.Xna.Framework;
+﻿#define isDesktop
+
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using Engine.UI;
-using Engine.Entities;
 
 namespace Engine
 {
@@ -48,15 +49,9 @@ namespace Engine
 
             base.Initialize();
 
-            Physics.Physics.Init();
+            Physics.PhysicsManager.Init();
 
 
-            curentLevel.entities.Add(new Player());
-            Box box = new Box();
-            box.Position = new Vector2(0,200);
-            curentLevel.entities.Add(box);
-
-            box.Start();
 
             this.Window.AllowUserResizing = true;
             if (platform == Platform.Desktop)
@@ -98,7 +93,7 @@ namespace Engine
 
             curentLevel.Update();
 
-            Physics.Physics.Update();
+            Physics.PhysicsManager.Update();
 
             curentLevel.LateUpdate();
 

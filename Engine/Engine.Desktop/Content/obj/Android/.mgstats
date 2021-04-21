@@ -1,3 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/block.png","F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/bin/Android/block.xnb","TextureProcessor","Texture2DContent",338,40085,0,1374008
-"F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/test.png","F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/bin/Android/test.xnb","TextureProcessor","Texture2DContent",2381,6085,0,0017028
+"F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/block.png","F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/bin/Android/block.xnb","TextureProcessor","Texture2DContent",338,40085,0,154315
+"F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/test.png","F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/bin/Android/test.xnb","TextureProcessor","Texture2DContent",2381,6085,0,0023456
+"F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/testVideo.wmv","F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/bin/Android/testVideo.xnb","VideoProcessor","VideoContent",853621,247,0,084557

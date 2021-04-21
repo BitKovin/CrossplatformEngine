@@ -37,3 +37,8 @@
 /processorParam:TextureFormat=Color
 /build:test.png
 
+#begin testVideo.wmv
+/importer:WmvImporter
+/processor:VideoProcessor
+/build:testVideo.wmv
+

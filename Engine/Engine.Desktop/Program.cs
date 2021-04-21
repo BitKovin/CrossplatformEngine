@@ -1,4 +1,5 @@
-﻿using System;
+﻿#define isDesktop
+using System;
 
 namespace Engine.Desktop
 {
@@ -7,8 +8,10 @@ namespace Engine.Desktop
         [STAThread]
         static void Main()
         {
-            using (var game = new Engine.GameMain())
+            using (var game = new Game.Game())
                 game.Run();
+
+            Engine.GameMain.platform = Platform.Desktop;
         }
     }
 }

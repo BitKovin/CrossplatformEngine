@@ -4,9 +4,11 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/block.png</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/test.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>
