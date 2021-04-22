@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Engine.UI
 {
-    public class Button: UiElement
+    public class Button : UiElement
     {
 
         Texture2D tex;
@@ -17,7 +17,16 @@ namespace Engine.UI
 
         public bool pressing;
 
-        public Button():base()
+        bool oldPressing;
+
+
+        public event OnClicked onClicked;
+
+        public event OnReleased onReleased;
+
+        float delay;
+
+        public Button() : base()
         {
             tex = new Texture2D(GameMain.inst.GraphicsDevice, 1, 1);
             tex.SetData(new Color[] { Color.White });
@@ -27,16 +36,39 @@ namespace Engine.UI
         {
             base.Update();
 
+            delay -= Time.deltaTime;
+
             if (GameMain.platform == Platform.Desktop)
             {
                 pressing = Mouse.GetState().LeftButton == ButtonState.Pressed && hovering;
             }
-            else if(GameMain.platform==Platform.Mobile)
+            else if (GameMain.platform == Platform.Mobile)
             {
                 pressing = hovering;
             }
 
+            if (pressing != oldPressing)
+            {
+                if (pressing)
+                {
+                    if (onClicked != null&&delay<=0)
+                        onClicked.Invoke();
+                    delay = 0.1f;
+                }
+                if (!pressing)
+                    if (onReleased != null)
+                        onReleased.Invoke();
+            }
+
+            oldPressing = pressing;
+
         }
+
+
+        public delegate void OnClicked();
+
+        public delegate void OnReleased();
+
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {

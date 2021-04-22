@@ -18,6 +18,8 @@ namespace Engine
 
     public class GameMain : Game
     {
+        SpriteFont font;
+
 
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
@@ -51,20 +53,19 @@ namespace Engine
 
             Physics.PhysicsManager.Init();
 
-
-
             this.Window.AllowUserResizing = true;
             if (platform == Platform.Desktop)
             {
                 _graphics.PreferredBackBufferWidth = 1280;  // set this value to the desired width of your window
                 _graphics.PreferredBackBufferHeight = 720;   // set this value to the desired height of your window
             }
-            this.IsFixedTimeStep = false;
+            this.IsFixedTimeStep = true;
+            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 500d);
             _graphics.SynchronizeWithVerticalRetrace = false;
 
             //if (platform == Platform.Mobile)
                 //_graphics.IsFullScreen = true;
-            //_graphics.ApplyChanges();
+            _graphics.ApplyChanges();
         }
 
 
@@ -74,6 +75,8 @@ namespace Engine
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             content = Content;
             // TODO: use this.Content to load your game content here
+
+            font = Content.Load<SpriteFont>("Font"); // Use the name of your sprite font file here instead of 'Score'.
         }
 
         protected override void Update(GameTime gameTime)
@@ -83,7 +86,7 @@ namespace Engine
 
             this.Exiting += Game1_Exiting;
 
-            Time.deltaTime = Math.Clamp((float)gameTime.ElapsedGameTime.TotalSeconds, 0.005f, 0.1f);
+            Time.deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             ScreenHeight = GraphicsDevice.PresentationParameters.Bounds.Height;
 
@@ -142,6 +145,13 @@ namespace Engine
             UiManger.Draw(gameTime,_spriteBatch);
 
             _spriteBatch.End();
+
+            _spriteBatch.Begin();
+
+            _spriteBatch.DrawString(font, $"FPS: {(1f/Time.deltaTime).ToString()}", new Vector2(100, 100), Color.Black);
+
+            _spriteBatch.End();
+
             //SetupFullViewport();
             base.Draw(gameTime);
         }

@@ -5,10 +5,12 @@
   <Config />
   <SourceFiles>
     <File>F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/block.png</File>
+    <File>F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/Font.spritefont</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/test.png</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine/Engine.Desktop/Content/testVideo.wmv</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

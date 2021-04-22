@@ -47,6 +47,9 @@
             "projectReferences": {
               "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj": {
                 "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj"
+              },
+              "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj": {
+                "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj"
               }
             }
           }
@@ -140,6 +143,80 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.8.0.1641, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj",
+        "projectName": "game",
+        "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj",
+        "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
+        "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Box2DX\\Box2DX.csproj": {
+                "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Box2DX\\Box2DX.csproj"
+              },
+              "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj": {
+                "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "MonoGame.Framework.Portable": {
+              "target": "Package",
+              "version": "[3.7.1.189, )"
             }
           },
           "imports": [

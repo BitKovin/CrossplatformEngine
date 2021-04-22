@@ -1,5 +1,4 @@
-﻿#define isDesktop
-using System;
+﻿using System;
 
 namespace Engine.Desktop
 {

@@ -21,7 +21,7 @@ namespace Engine.Entities
         Button buttonRight = new Button();
         Button buttonRotate = new Button();
 
-        float speed = 1;
+        float speed = 2;
 
         public Player():base()
         {
@@ -55,8 +55,13 @@ namespace Engine.Entities
 
             collision.size = new Point(50, 30);
 
+            buttonRotate.onClicked += ButtonRotate_onClicked;
 
+        }
 
+        private void ButtonRotate_onClicked()
+        {
+            Jump();
         }
 
         public override void Start()
@@ -86,10 +91,10 @@ namespace Engine.Entities
             
             if(input.Length()>0)
             {
-
+                input.Normalize();
                 PhysicsBody.SetLinearVelocity(new Box2DX.Common.Vec2((input * speed).X, PhysicsBody.GetLinearVelocity().Y));
 
-                input.Normalize();
+
                 for (int i = 0; i < 10; i++)
                 {
                     //Position += new Vector2((input * speed * Time.deltaTime).X, 0)*0.1f;
@@ -114,14 +119,19 @@ namespace Engine.Entities
             }
 
 
-            if (Keyboard.GetState().IsKeyDown(Keys.R)||buttonRotate.pressing)
-                sprite.Rotation += 360 /57.2958f * Time.deltaTime;
+            if (Input.pressedKeys.Contains(Keys.W))
+                Jump();
 
         }
 
         public override void LateUpdate()
         {
             //Camera.Follow(this);
+        }
+
+        void Jump()
+        {
+            PhysicsBody.ApplyImpulse(new Box2DX.Common.Vec2(0, -100), PhysicsBody.GetWorldCenter());
         }
 
 

@@ -55,6 +55,15 @@
           }
         }
       },
+      "MonoGame.Framework.Portable/3.7.1.189": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Framework.dll": {}
+        }
+      },
       "Box2DX/1.0.0": {
         "type": "project",
         "compile": {
@@ -75,6 +84,21 @@
         },
         "runtime": {
           "bin/placeholder/Engine.dll": {}
+        }
+      },
+      "game/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Box2DX": "1.0.0",
+          "Engine": "1.0.0",
+          "MonoGame.Framework.Portable": "3.7.1.189"
+        },
+        "compile": {
+          "bin/placeholder/game.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/game.dll": {}
         }
       }
     }
@@ -188,6 +212,19 @@
         "runtimes/win-x86/native/soft_oal.dll"
       ]
     },
+    "MonoGame.Framework.Portable/3.7.1.189": {
+      "sha512": "Q5ARWZtCtJa8aD5zeeMmEkAwnguEq6aZqeIh9RdAi9RhaYJxoGc0lYka4sZaq2hGQAP7KFsPe4U9uhK/6c37vg==",
+      "type": "package",
+      "path": "monogame.framework.portable/3.7.1.189",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-net45+win8+wpa81/MonoGame.Framework.dll",
+        "lib/portable-net45+win8+wpa81/MonoGame.Framework.xml",
+        "monogame.framework.portable.3.7.1.189.nupkg.sha512",
+        "monogame.framework.portable.nuspec"
+      ]
+    },
     "Box2DX/1.0.0": {
       "type": "project",
       "path": "../Box2DX/Box2DX.csproj",
@@ -197,13 +234,19 @@
       "type": "project",
       "path": "../Engine/Engine.csproj",
       "msbuildProject": "../Engine/Engine.csproj"
+    },
+    "game/1.0.0": {
+      "type": "project",
+      "path": "../game/game.csproj",
+      "msbuildProject": "../game/game.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Engine >= 1.0.0",
       "MonoGame.Content.Builder.Task >= 3.8.0.1641",
-      "MonoGame.Framework.DesktopGL >= 3.8.0.1641"
+      "MonoGame.Framework.DesktopGL >= 3.8.0.1641",
+      "game >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -245,6 +288,9 @@
           "projectReferences": {
             "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj": {
               "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj"
+            },
+            "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj": {
+              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj"
             }
           }
         }
@@ -286,5 +332,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"MonoGame.Framework.Portable 3.7.1.189\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "MonoGame.Framework.Portable",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
