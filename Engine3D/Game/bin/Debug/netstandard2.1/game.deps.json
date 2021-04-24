@@ -1,0 +1,67 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "game/1.0.0": {
+        "dependencies": {
+          "Engine": "1.0.0",
+          "MGSkinnedModel": "1.0.0",
+          "MonoGame.Framework.Portable": "3.7.1.189"
+        },
+        "runtime": {
+          "game.dll": {}
+        }
+      },
+      "MonoGame.Framework.Portable/3.7.1.189": {
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Framework.dll": {
+            "assemblyVersion": "3.7.1.189",
+            "fileVersion": "3.7.1.189"
+          }
+        }
+      },
+      "Engine/1.0.0": {
+        "dependencies": {
+          "MGSkinnedModel": "1.0.0"
+        },
+        "runtime": {
+          "Engine.dll": {}
+        }
+      },
+      "MGSkinnedModel/1.0.0": {
+        "runtime": {
+          "MGSkinnedModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "game/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MonoGame.Framework.Portable/3.7.1.189": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q5ARWZtCtJa8aD5zeeMmEkAwnguEq6aZqeIh9RdAi9RhaYJxoGc0lYka4sZaq2hGQAP7KFsPe4U9uhK/6c37vg==",
+      "path": "monogame.framework.portable/3.7.1.189",
+      "hashPath": "monogame.framework.portable.3.7.1.189.nupkg.sha512"
+    },
+    "Engine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MGSkinnedModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

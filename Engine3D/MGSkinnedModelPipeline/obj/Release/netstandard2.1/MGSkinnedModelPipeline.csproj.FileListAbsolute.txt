@@ -1,0 +1,12 @@
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\bin\Release\netstandard2.1\MGSkinnedModelPipeline.deps.json
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\bin\Release\netstandard2.1\MGSkinnedModelPipeline.dll
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\bin\Release\netstandard2.1\MGSkinnedModelPipeline.pdb
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\bin\Release\netstandard2.1\MGSkinnedModel.dll
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\bin\Release\netstandard2.1\MGSkinnedModel.pdb
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\obj\Release\netstandard2.1\MGSkinnedModelPipeline.csprojAssemblyReference.cache
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\obj\Release\netstandard2.1\MGSkinnedModelPipeline.AssemblyInfoInputs.cache
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\obj\Release\netstandard2.1\MGSkinnedModelPipeline.AssemblyInfo.cs
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\obj\Release\netstandard2.1\MGSkinnedModelPipeline.csproj.CoreCompileInputs.cache
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\obj\Release\netstandard2.1\MGSkinnedModelPipeline.csproj.CopyComplete
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\obj\Release\netstandard2.1\MGSkinnedModelPipeline.dll
+F:\GitHub\CrossplatformGameEngine\Engine3D\MGSkinnedModelPipeline\obj\Release\netstandard2.1\MGSkinnedModelPipeline.pdb
