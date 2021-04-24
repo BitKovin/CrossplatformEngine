@@ -93,7 +93,8 @@ namespace Engine.Entities
             {
                 input.Normalize();
 
-                Camera.position += new Vector3(input.X,0, input.Y) *speed*Time.deltaTime;
+                Camera.position += Camera.rotation.GetRightVector() * input.X * speed*Time.deltaTime;
+                Camera.position += Camera.rotation.GetForwardVector().XZ() * input.Y * speed * Time.deltaTime;
 
 
                 for (int i = 0; i < 10; i++)

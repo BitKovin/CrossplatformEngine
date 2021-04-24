@@ -59,7 +59,7 @@ namespace Engine
                 _graphics.PreferredBackBufferHeight = 720;   // set this value to the desired height of your window
             }
             this.IsFixedTimeStep = true;
-            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 100d);
+            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 500d);
             _graphics.SynchronizeWithVerticalRetrace = false;
 
             //if (platform == Platform.Mobile)
@@ -145,7 +145,6 @@ namespace Engine
 
             _spriteBatch.DrawString(font, $"FPS: {(1f/Time.deltaTime).ToString()}", new Vector2(100, 100), Color.Black);
             _spriteBatch.DrawString(font, $"Camera Position: {Camera.position.ToString()}", new Vector2(100, 200), Color.Black);
-            _spriteBatch.DrawString(font, $"Camera Rotation: {MathHelper.GetForwardRotation(Camera.rotation)}", new Vector2(100, 300), Color.Black);
             
 
             _spriteBatch.End();

@@ -14,6 +14,8 @@ namespace Engine
         public static List<Keys> pressedKeys = new List<Keys>();
         public static List<Keys> releasedKeys = new List<Keys>();
 
+        public static bool LockCursor = true;
+
         public static void Update()
         {
 
@@ -21,8 +23,11 @@ namespace Engine
 
             Vector2 mousePos = new Vector2(Mouse.GetState().X, Mouse.GetState().Y) / ScaleY;
             MouseDelta = mousePos - MousePos;
+            if (LockCursor)
+                Mouse.SetPosition(GameMain.inst.GraphicsDevice.Viewport.Width / 2, GameMain.inst.GraphicsDevice.Viewport.Height / 2);
             Console.WriteLine(MouseDelta);
-            MousePos = mousePos;
+            MousePos = new Vector2(Mouse.GetState().X, Mouse.GetState().Y) / ScaleY;
+            
 
 
             pressedKeys.Clear();
