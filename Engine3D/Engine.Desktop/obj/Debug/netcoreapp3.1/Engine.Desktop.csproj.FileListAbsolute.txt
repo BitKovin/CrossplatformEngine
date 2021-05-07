@@ -67,3 +67,4 @@ F:\GitHub\CrossplatformGameEngine\Engine3D\Engine.Desktop\obj\Debug\netcoreapp3.
 F:\GitHub\CrossplatformGameEngine\Engine3D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.pdb
 F:\GitHub\CrossplatformGameEngine\Engine3D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.genruntimeconfig.cache
 F:\GitHub\CrossplatformGameEngine\Engine3D\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\testModel.xnb
+F:\GitHub\CrossplatformGameEngine\Engine3D\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\testModel2.xnb

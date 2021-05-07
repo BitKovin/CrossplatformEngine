@@ -76,11 +76,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj",
+      "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\game\\game.csproj",
       "projectName": "game",
-      "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj",
+      "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\game\\game.csproj",
       "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-      "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\obj\\",
+      "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\game\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -104,11 +104,11 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Box2DX\\Box2DX.csproj": {
-              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Box2DX\\Box2DX.csproj"
+            "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Box2DX\\Box2DX.csproj": {
+              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Box2DX\\Box2DX.csproj"
             },
-            "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj": {
-              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj"
+            "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Engine\\Engine.csproj": {
+              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Engine\\Engine.csproj"
             }
           }
         }

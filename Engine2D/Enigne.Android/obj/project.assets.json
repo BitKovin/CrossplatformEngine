@@ -217,11 +217,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Enigne.Android\\Enigne.Android.csproj",
+      "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Enigne.Android\\Enigne.Android.csproj",
       "projectName": "Enigne.Android",
-      "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Enigne.Android\\Enigne.Android.csproj",
+      "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Enigne.Android\\Enigne.Android.csproj",
       "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-      "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Enigne.Android\\obj\\",
+      "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Enigne.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -244,11 +244,11 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj": {
-              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine\\Engine.csproj"
+            "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Engine\\Engine.csproj": {
+              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Engine\\Engine.csproj"
             },
-            "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj": {
-              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj"
+            "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\game\\game.csproj": {
+              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\game\\game.csproj"
             }
           }
         }

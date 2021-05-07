@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/gVIeJmH1uQD2AQYFHGsg6y9C4BZSa/mXxurVipWF7IVhW5x4fOfhjDVYq+6N6mavNi6/nFPx1NtOl6vNnG4CA==",
+  "dgSpecHash": "Uu2xIYNhPPvAr1lfsw1sxh/uAuX/r9R7vZYeXizWZ9BR1Kbinr1Ind5o7Do7UHjkLyxQj1dKu6Y3iXcSEPdNzA==",
   "success": true,
-  "projectFilePath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\Engine.Desktop\\Engine.Desktop.csproj",
+  "projectFilePath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Engine.Desktop\\Engine.Desktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bogda\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\bogda\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",

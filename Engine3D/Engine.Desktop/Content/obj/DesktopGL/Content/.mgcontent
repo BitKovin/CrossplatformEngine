@@ -8,9 +8,11 @@
     <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/Font.spritefont</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/test.png</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/testModel.fbx</File>
+    <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/testModel2.fbx</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/testVideo.wmv</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

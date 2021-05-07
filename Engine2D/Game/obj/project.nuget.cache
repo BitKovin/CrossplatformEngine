@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "23GBKb5gHndNbI4VBPhsSa/iJchaZVRpYfJJ11DZkMh/eJqK7NohZD6OQnlFbn7HDDY9tf0YoXCTxihntVL9qg==",
+  "dgSpecHash": "mpDVQYxAAQeZpXk5bYKgwZFmWKe2k3d9KyCr6KmaOkvdnYd+xt7FxjNHdQZQGw4d1ewsPCfyOoLpWek0DybIlw==",
   "success": true,
-  "projectFilePath": "F:\\GitHub\\CrossplatformGameEngine\\Engine\\game\\game.csproj",
+  "projectFilePath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\game\\game.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bogda\\.nuget\\packages\\monogame.framework.portable\\3.7.1.189\\monogame.framework.portable.3.7.1.189.nupkg.sha512"
   ],

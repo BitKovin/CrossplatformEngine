@@ -35,6 +35,8 @@ namespace Engine
 
         public UiElement UiManger = new UiElement();
 
+        public static GameTime time;
+
         public GameMain()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -82,6 +84,8 @@ namespace Engine
         {
             //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             // Exit();
+
+            time = gameTime;
 
             this.Exiting += Game1_Exiting;
 
@@ -145,7 +149,8 @@ namespace Engine
 
             _spriteBatch.DrawString(font, $"FPS: {(1f/Time.deltaTime).ToString()}", new Vector2(100, 100), Color.Black);
             _spriteBatch.DrawString(font, $"Camera Position: {Camera.position.ToString()}", new Vector2(100, 200), Color.Black);
-            
+            _spriteBatch.DrawString(font, $"Camera Vector: {Camera.rotation.GetForwardVector()}", new Vector2(100, 300), Color.Black);
+
 
             _spriteBatch.End();
 

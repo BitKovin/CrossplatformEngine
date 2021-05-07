@@ -1,12 +1,13 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Engine.UI;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
+using SkinnedModel;
 
 namespace Engine.Entities
 {
@@ -20,6 +21,8 @@ namespace Engine.Entities
         Button buttonLeft = new Button();
         Button buttonRight = new Button();
         Button buttonRotate = new Button();
+
+        AnimationPlayer animationPlayer;
 
         float speed = 2;
 
@@ -44,15 +47,21 @@ namespace Engine.Entities
                 buttonRotate.size = new Vector2(100, 100);
                 buttonRotate.originH = Origin.Right;
                 UiElement.main.childs.Add(buttonRotate);
-
-                Position = new Vector3(-100);
-
             }
             //Camera.Follow(this);
 
             collision.size = new Vector3(1,1,1);
 
-            model = GameMain.content.Load<Model>("testModel");
+            Position = new Vector3(-100);
+
+            model = GameMain.content.Load<Model>("testModel2");
+
+            SkinningData skinningData = model.Tag as SkinningData;
+            animationPlayer = new AnimationPlayer(skinningData);
+
+            Console.WriteLine(skinningData.AnimationClips.Keys.First());
+            AnimationClip clip = skinningData.AnimationClips[skinningData.AnimationClips.Keys.First()];
+            animationPlayer.StartClip(clip);
 
             buttonRotate.onClicked += ButtonRotate_onClicked;
 
@@ -124,11 +133,40 @@ namespace Engine.Entities
             if (Input.pressedKeys.Contains(Keys.W))
                 Jump();
 
+            animationPlayer.Update(GameMain.time.ElapsedGameTime,true,Matrix.Identity);
+
+            
+
         }
 
         public override void LateUpdate()
         {
             //Camera.Follow(this);
+        }
+
+        public override void Draw()
+        {
+            Matrix[] bones = animationPlayer.GetSkinTransforms();
+
+            // Render the skinned mesh.
+            foreach (ModelMesh mesh in model.Meshes)
+            {
+                foreach (SkinnedEffect effect in mesh.Effects)
+                {
+                    effect.SetBoneTransforms(bones);
+
+                    //effect.World = Matrix.CreateTranslation(Position);
+                    effect.View = Camera.view;
+                    effect.Projection = Camera.projection;
+
+                    effect.EnableDefaultLighting();
+
+                    effect.SpecularColor = new Vector3(0.25f);
+                    effect.SpecularPower = 16;
+                }
+
+                mesh.Draw();
+            }
         }
 
         void Jump()
