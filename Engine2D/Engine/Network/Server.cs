@@ -15,8 +15,12 @@ namespace Engine.Network
         const int TPS = 10;
 
         TcpListener Listener; // Объект, принимающий TCP-клиентов
+        UdpClient UdpClient;
 
         List<Client> clients = new List<Client>();
+
+        public delegate void PacketHandler(int _fromClient, Packet _packet);
+        public static Dictionary<int, PacketHandler> packetHandlers;
 
         // Запуск сервера
         public Server(int Port = 7777)
@@ -27,6 +31,8 @@ namespace Engine.Network
 
             new Thread(new ThreadStart(AcceptConnections)).Start();
             new Thread(new ThreadStart(BeginUpdateClients)).Start();
+            InitializeServerData();
+
         }
 
         void AcceptConnections()
@@ -45,6 +51,7 @@ namespace Engine.Network
             while (true)
             {
                 sw.Restart();
+                ThreadManagerServer.UpdateMain();
                 Parallel.ForEach(clients,
                     client =>
                     {
@@ -74,6 +81,16 @@ namespace Engine.Network
                     client.SendTCP(packet);
                 }
             }
+        }
+
+        private static void InitializeServerData()
+        {
+
+            packetHandlers = new Dictionary<int, PacketHandler>()
+            {
+                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived }
+            };
+            Console.WriteLine("Initialized packets.");
         }
 
         // Остановка сервера

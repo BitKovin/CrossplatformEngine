@@ -9,6 +9,11 @@ namespace Engine.Network
         public static void Welcome(Packet packet)
         {
             Console.WriteLine(packet.ReadString());
+
+            Packet packetResp = new Packet((int)ClientPackets.welcomeReceived);
+            packetResp.Write("Hi from client");
+            GameClient.instance.SendTCPData(packetResp);
+
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Engine.Network
     public class GameClient
     {
         public TcpClient tcpClient;
-
+        public static GameClient instance;
         private NetworkStream stream;
         private Packet receivedData;
         private byte[] receiveBuffer;
@@ -29,6 +29,9 @@ namespace Engine.Network
             receiveBuffer = new byte[dataBufferSize];
 
             tcpClient.BeginConnect(ip, port,ConnectCallback,tcpClient);
+
+            instance = this;
+
             return true;
         }
 
@@ -128,6 +131,12 @@ namespace Engine.Network
             { (int)ServerPackets.welcome, ClientHandle.Welcome }
         };
             Console.WriteLine("Initialized packets.");
+        }
+
+        public void SendTCPData(Packet packet)
+        {
+            packet.WriteLength();
+            tcpClient.GetStream().BeginWrite(packet.ToArray(), 0, packet.Length(), null, null);
         }
 
     }
