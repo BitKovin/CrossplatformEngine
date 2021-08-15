@@ -29,7 +29,7 @@ namespace Engine.Entities
             PhysicsBody = Physics.PhysicsManager.CreateBox(0, 0, 50, 30, this,0);
            // PhysicsBody.FreezeRotation();
 
-            if (GameMain.platform == Platform.Mobile)
+            if (GameMain.platform == Platform.Mobile||true)
             {
 
                 buttonLeft = new Button();
