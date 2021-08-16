@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 using Engine.Entities;
 
@@ -15,6 +16,7 @@ namespace Engine.Network
             Packet packetResp = new Packet((int)ClientPackets.welcomeReceived);
             packetResp.Write("Hi from client");
             GameClient.instance.SendTCPData(packetResp);
+            GameClient.instance.udp.Connect(((IPEndPoint)GameClient.instance.tcpClient.Client.LocalEndPoint).Port);
 
         }
         public static void SetPlayerPos(Packet packet)

@@ -12,7 +12,8 @@ namespace Engine.Network
             Packet packet = new Packet((int)ClientPackets.SetPlayerPos);
             packet.Write(pos.X);
             packet.Write(pos.Y);
-            GameClient.instance.SendTCPData(packet);
+            packet.WriteLength();
+            GameClient.instance.udp.SendData(packet);
         }
 
 
