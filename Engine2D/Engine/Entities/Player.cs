@@ -63,8 +63,7 @@ namespace Engine.Entities
 
         private void ButtonRotate_onClicked()
         {
-            if (id != Network.GameClient.instance.id) return;
-            Network.ClientSend.SetPlayerPos(Position);
+
         }
 
         public override void Start()
@@ -90,7 +89,10 @@ namespace Engine.Entities
 
             if (buttonLeft.pressing || Keyboard.GetState().IsKeyDown(Keys.A) || buttonUpLeft.pressing)
                 Position -= new Vector2(100, 0) * Time.deltaTime;
-            if(input.Length()>0)
+
+            Network.ClientSend.SetPlayerPos(Position);
+
+            if (input.Length()>0)
             {
                 input.Normalize();
                 PhysicsBody.SetLinearVelocity(new Box2DX.Common.Vec2((input * speed).X, PhysicsBody.GetLinearVelocity().Y));

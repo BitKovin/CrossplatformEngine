@@ -13,7 +13,7 @@ namespace Engine.Network
             packet.Write(id);
             packet.Write(pos.X);
             packet.Write(pos.Y);
-            SendTCPDataToAll(packet);
+            SendUDPDataToAll(packet);
         }
 
         static void SendTCPDataToAll(Packet packet)
@@ -23,6 +23,16 @@ namespace Engine.Network
             {
                 client.SendTCP(packet,false);
                 
+            }
+        }
+
+        static void SendUDPDataToAll(Packet packet)
+        {
+            packet.WriteLength();
+            foreach (Client client in Server.instance.clients)
+            {
+                client.udp.SendData(packet);
+
             }
         }
 

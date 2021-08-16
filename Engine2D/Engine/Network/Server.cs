@@ -12,7 +12,7 @@ namespace Engine.Network
     public class Server
     {
         Stopwatch sw = new Stopwatch();
-        const int TPS = 10;
+        const int TPS = 60;
 
         public static Server instance;
 
