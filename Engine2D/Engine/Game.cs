@@ -28,6 +28,7 @@ namespace Game
             Thread.Sleep(1000);
             GameClient client = new GameClient();
             client.Connect("127.0.0.1");
+
         }
     }
 }

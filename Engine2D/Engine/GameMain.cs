@@ -16,7 +16,7 @@ namespace Engine
         Mobile
     }
 
-    public class GameMain : Game
+    public class GameMain : Microsoft.Xna.Framework.Game
     {
         SpriteFont font;
 
@@ -150,7 +150,8 @@ namespace Engine
 
             _spriteBatch.Begin();
 
-            _spriteBatch.DrawString(font, $"FPS: {(1f/Time.deltaTime).ToString()}", new Vector2(100, 100), Color.Black);
+            if (Network.GameClient.instance != null)
+                _spriteBatch.DrawString(font, $"ID: {(Network.GameClient.instance.id).ToString()}", new Vector2(100, 100), Color.Black);
 
             _spriteBatch.End();
 

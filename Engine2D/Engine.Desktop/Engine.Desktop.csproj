@@ -30,6 +30,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.csproj" />
-    <ProjectReference Include="..\game\game.csproj" />
   </ItemGroup>
 </Project>

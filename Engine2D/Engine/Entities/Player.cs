@@ -25,13 +25,13 @@ namespace Engine.Entities
 
         public int id;
 
-        public Player():base()
+        public Player(int id = 0):base()
         {
-
+            this.id = id;
             //PhysicsBody = Physics.PhysicsManager.CreateBox(0, 0, 50, 30, this,0);
            // PhysicsBody.FreezeRotation();
 
-            if (GameMain.platform == Platform.Mobile||true)
+            if (GameMain.platform == Platform.Mobile||id == Network.GameClient.instance.id)
             {
 
                 buttonLeft = new Button();
@@ -63,6 +63,7 @@ namespace Engine.Entities
 
         private void ButtonRotate_onClicked()
         {
+            if (id != Network.GameClient.instance.id) return;
             Network.ClientSend.SetPlayerPos(Position);
         }
 
@@ -77,7 +78,7 @@ namespace Engine.Entities
 
 
             Vector2 input = new Vector2();
-
+            if (id != Network.GameClient.instance.id) return;
             if (buttonUp.pressing || Keyboard.GetState().IsKeyDown(Keys.W)|| buttonUpRight.pressing || buttonUpLeft.pressing)
                 Position += new Vector2(0, -100)*Time.deltaTime;
 
@@ -89,8 +90,6 @@ namespace Engine.Entities
 
             if (buttonLeft.pressing || Keyboard.GetState().IsKeyDown(Keys.A) || buttonUpLeft.pressing)
                 Position -= new Vector2(100, 0) * Time.deltaTime;
-
-            
             if(input.Length()>0)
             {
                 input.Normalize();

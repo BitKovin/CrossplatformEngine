@@ -54,9 +54,7 @@ F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Box2DX.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Engine.dll
-F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\game.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Engine.pdb
-F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\game.pdb
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Box2DX.pdb
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.csprojAssemblyReference.cache
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.AssemblyInfoInputs.cache

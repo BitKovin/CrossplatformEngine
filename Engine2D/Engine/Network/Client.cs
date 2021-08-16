@@ -17,8 +17,10 @@ namespace Engine.Network
 
         public static int dataBufferSize = 4096;
 
-        public Client(TcpClient Client)
+        public Client(TcpClient Client, int _id)
         {
+            id = _id;
+
             tcpClient = Client;
             stream = tcpClient.GetStream();
 
@@ -34,6 +36,7 @@ namespace Engine.Network
             using (Packet _packet = new Packet((int)ServerPackets.welcome))
             {
                 _packet.Write("Hi");
+                _packet.Write(id);
                 SendTCP(_packet);
             }
         }
@@ -113,9 +116,10 @@ namespace Engine.Network
             return false;
         }
 
-        public void SendTCP(Packet packet)
+        public void SendTCP(Packet packet, bool wr = true)
         {
-            packet.WriteLength();
+            if(wr)
+                packet.WriteLength();
             tcpClient.GetStream().BeginWrite(packet.ToArray(),0,packet.Length(),null,null);
         }
 

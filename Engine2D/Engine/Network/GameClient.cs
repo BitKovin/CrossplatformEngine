@@ -18,6 +18,7 @@ namespace Engine.Network
 
         public static int dataBufferSize = 4096;
 
+        public int id;
         public GameClient()
         {
             tcpClient = new TcpClient();
@@ -128,7 +129,8 @@ namespace Engine.Network
         {
             packetHandlers = new Dictionary<int, PacketHandler>()
         {
-            { (int)ServerPackets.welcome, ClientHandle.Welcome }
+            { (int)ServerPackets.welcome, ClientHandle.Welcome },
+            { (int)ServerPackets.SetPlayerPos, ClientHandle.SetPlayerPos }
         };
             Console.WriteLine("Initialized packets.");
         }

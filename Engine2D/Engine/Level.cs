@@ -8,9 +8,12 @@ namespace Engine
     {
         public List<Entity> entities;
 
+        public Engine.Entities.Player[] players = new Entities.Player[5];
+
         public Level()
         {
             entities = new List<Entity>();
+
         }
 
         public virtual void Start()

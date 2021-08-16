@@ -7,7 +7,7 @@ namespace Engine.Desktop
         [STAThread]
         static void Main()
         {
-            using (var game = new Game.Game())
+            using (var game = new Game.MyGame())
                 game.Run();
 
             Engine.GameMain.platform = Platform.Desktop;

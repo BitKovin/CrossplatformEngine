@@ -14,10 +14,12 @@ namespace Engine.Network
         Stopwatch sw = new Stopwatch();
         const int TPS = 10;
 
+        public static Server instance;
+
         TcpListener Listener; // Объект, принимающий TCP-клиентов
         UdpClient UdpClient;
 
-        List<Client> clients = new List<Client>();
+        public List<Client> clients = new List<Client>();
 
         public delegate void PacketHandler(int _fromClient, Packet _packet);
         public static Dictionary<int, PacketHandler> packetHandlers;
@@ -25,6 +27,8 @@ namespace Engine.Network
         // Запуск сервера
         public Server(int Port = 7777)
         {
+            if (instance == null)
+                instance = this;
             // Создаем "слушателя" для указанного порта
             Listener = new TcpListener(IPAddress.Any, Port);
             Listener.Start(); // Запускаем его
@@ -41,7 +45,7 @@ namespace Engine.Network
             while (true)
             {
                 // Принимаем новых клиентов
-                clients.Add(new Client(Listener.AcceptTcpClient()));
+                clients.Add(new Client(Listener.AcceptTcpClient(),clients.Count));
                 Console.WriteLine("connection accepted");
             }
         }
@@ -88,7 +92,8 @@ namespace Engine.Network
 
             packetHandlers = new Dictionary<int, PacketHandler>()
             {
-                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived }
+                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
+                { (int)ClientPackets.SetPlayerPos, ServerHandle.SetPlayerPos }
             };
             Console.WriteLine("Initialized packets.");
         }
