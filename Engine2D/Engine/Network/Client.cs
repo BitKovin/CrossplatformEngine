@@ -57,7 +57,7 @@ namespace Engine.Network
                 int _byteLength = TcpStream.EndRead(_result);
                 if (_byteLength <= 0)
                 {
-                    // TODO: disconnect
+                    Disconnect();
                     return;
                 }
 
@@ -70,7 +70,8 @@ namespace Engine.Network
             catch (Exception _ex)
             {
                 Console.WriteLine($"Error receiving TCP data: {_ex}");
-                // TODO: disconnect
+                Disconnect();
+                Server.instance.StartUDP();
             }
         }
 
@@ -172,7 +173,14 @@ namespace Engine.Network
 
             void Disconnect()
         {
-            Server.instance.clients.Remove(this);
+            Server.instance.clients[id]=null;
+            //tcpClient.Close();
+            //TcpStream = null;
+            //TcpReceivedData = null;
+            //TcpReceiveBuffer = null;
+            //tcpClient = null;
+            //udp.endPoint = null;
+            Console.WriteLine($"Client {id.ToString()} disconnected");
         }
 
     }

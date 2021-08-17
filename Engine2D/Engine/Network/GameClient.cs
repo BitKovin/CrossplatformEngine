@@ -156,7 +156,6 @@ namespace Engine.Network
 
                 socket.Connect(endPoint);
                 socket.BeginReceive(ReceiveCallback, null);
-
                 using (Packet _packet = new Packet())
                 {
                     SendData(_packet);
@@ -191,6 +190,7 @@ namespace Engine.Network
 
                     if (_data.Length < 4)
                     {
+                        Console.WriteLine("disconnect");
                         //instance.Disconnect();
                         return;
                     }
@@ -227,7 +227,7 @@ namespace Engine.Network
             private void Disconnect()
             {
                 //instance.Disconnect();
-
+                Console.WriteLine("disconnect");
                 endPoint = null;
                 socket = null;
             }

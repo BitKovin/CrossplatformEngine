@@ -31,8 +31,8 @@ namespace Engine.Network
             packet.WriteLength();
             foreach (Client client in Server.instance.clients)
             {
+                if(client!=null)
                 client.udp.SendData(packet);
-
             }
         }
 

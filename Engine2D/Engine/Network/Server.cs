@@ -13,22 +13,29 @@ namespace Engine.Network
     {
         Stopwatch sw = new Stopwatch();
         const int TPS = 60;
-
+        int port;
         public static Server instance;
+
+        int maxPlayers;
 
         TcpListener Listener; // Объект, принимающий TCP-клиентов
         private UdpClient udpListener;
 
-        public List<Client> clients = new List<Client>();
+        public Client[] clients;
 
         public delegate void PacketHandler(int _fromClient, Packet _packet);
         public static Dictionary<int, PacketHandler> packetHandlers;
 
         // Запуск сервера
-        public Server(int Port = 7777)
+        public Server(int Port = 7777, int MaxPlayers = 5)
         {
+            port = Port;
+            maxPlayers = MaxPlayers;
             if (instance == null)
                 instance = this;
+
+            clients = new Client[maxPlayers];
+
             // Создаем "слушателя" для указанного порта
             Listener = new TcpListener(IPAddress.Any, Port);
             Listener.Start(); // Запускаем его
@@ -42,13 +49,37 @@ namespace Engine.Network
 
         }
 
+        public void StartUDP()
+        {
+            udpListener.Close();
+            udpListener = new UdpClient(port);
+            udpListener.BeginReceive(UDPReceiveCallback, null);
+        }
+
+        int FindSlot()
+        {
+            for(int i = 0; i<clients.Length;i++)
+            {
+                if(clients[i]==null)
+                {
+                    return i;
+                }else if(clients[i].tcpClient==null)
+                {
+                    clients[i] = null;
+                    return i;
+                }
+            }
+            return -1;
+        }
+
         void AcceptConnections()
         {
             // В бесконечном цикле
             while (true)
             {
+                int slot = FindSlot();
                 // Принимаем новых клиентов
-                clients.Add(new Client(Listener.AcceptTcpClient(),clients.Count));
+                clients[slot] = new Client(Listener.AcceptTcpClient(),slot);
                 Console.WriteLine("connection accepted");
             }
         }
@@ -63,7 +94,9 @@ namespace Engine.Network
 
                 if (_data.Length < 4)
                 {
+                    
                     return;
+                    
                 }
 
                 using (Packet _packet = new Packet(_data))
@@ -104,16 +137,8 @@ namespace Engine.Network
                 Parallel.ForEach(clients,
                     client =>
                     {
-                        if (!client.tcpClient.Connected)
-                        {
-                            clients.Remove(client);
-                            Console.WriteLine("disconnected");
-                        }
-                        else
-                        {
-                            client.Update();
-                        }
-
+                        if(client!=null)
+                        client.Update();
                     });
                 sw.Stop();
                 float FrameTime = 1000 / TPS;

@@ -132,7 +132,7 @@ namespace Engine
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            _spriteBatch.Begin(transformMatrix: Camera.Transform);
+            _spriteBatch.Begin(transformMatrix: Camera.Transform, sortMode: SpriteSortMode.BackToFront);
 
             foreach(Entity ent in curentLevel.entities)
             {

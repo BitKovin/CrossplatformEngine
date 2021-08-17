@@ -19,14 +19,14 @@ namespace Engine
 
         public Vector2 Scale = new Vector2(1,1);
 
-        public int depth;
+        public float depth;
 
         public SpriteEffects effects;
 
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, Position, null, Color.White, Rotation, Origin, Scale, effects, depth);
+            spriteBatch.Draw(texture, Position, null, Color.White, Rotation, Origin, Scale, effects, 0);//Math.Clamp( depth/100f+50f,0,1));
         }
 
     }
