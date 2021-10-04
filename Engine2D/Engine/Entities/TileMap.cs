@@ -9,10 +9,12 @@ namespace Engine.Entities
 {
     public class TileMap : Entity
     {
+
+
         public bool autoBorder;
         short[,] map;
         Vector2 size;
-        public Vector2 tileSize = new Vector2(10);
+        public Vector2 tileSize = new Vector2(12);
         List<Texture2D> tiles = new List<Texture2D>();
 
         public TileMap(int sx = 100, int sy = 100)
@@ -53,23 +55,22 @@ namespace Engine.Entities
         void DrawTile(int x, int y, SpriteBatch spriteBatch)
         {
             Point spriteLocation = GetTileSprite(x, y);
-            Point spritePoint = new Point(spriteLocation.X/ (int)tileSize.X, spriteLocation.Y / (int)tileSize.Y);
-            Vector2 tileLocation = new Vector2(x * tiles[map[x, y]].Width / 3, y * tiles[map[x, y]].Height / 3);
-            Rectangle rect = new Rectangle(spriteLocation, new Point(tiles[map[x, y]].Width / 3, tiles[map[x, y]].Height / 3));
+            Vector2 tileLocation = new Vector2(x * tiles[map[x, y]].Width / 4 - x, y * tiles[map[x, y]].Height / 4 - y);
+            Rectangle rect = new Rectangle(spriteLocation, new Point(tiles[map[x, y]].Width / 4, tiles[map[x, y]].Height / 4));
             spriteBatch.Draw(tiles[map[x, y]], Position + tileLocation, rect, Color.White, 0.0f, Vector2.Zero, 1, SpriteEffects.None, 1);
         }
 
-        Point GetTileSprite(int x, int y, int size = 10)
+        Point GetTileSprite(int x, int y, int size = 12)
         {
             //return Point.Zero;
             int X,Y;
             if (GetTile(x, y) == GetTile(x - 1, y) && GetTile(x, y) == GetTile(x + 1, y))
             {
-                X = 1;
+                X = 1 + x%2;
             }
             else if (GetTile(x, y) == GetTile(x - 1, y))
             {
-                X = 2;
+                X = 3;
             }
             else if (GetTile(x, y) == GetTile(x + 1, y))
             {
@@ -79,11 +80,11 @@ namespace Engine.Entities
 
             if (GetTile(x, y) == GetTile(x, y - 1) && GetTile(x, y) == GetTile(x, y + 1))
             {
-                Y = 1;
+                Y = 1 + y%2;
             }
             else if (GetTile(x, y) == GetTile(x, y - 1))
             {
-                Y = 2;
+                Y = 3;
             }
             else if (GetTile(x, y) == GetTile(x, y + 1))
             {
@@ -139,7 +140,7 @@ namespace Engine.Entities
         {
             Point p;
 
-            Vector2 localPos = pos - Position;
+            Vector2 localPos = pos - Position + tileSize*2;
 
             p = new Point((int)(localPos.X / tileSize.X), (int)(localPos.Y / tileSize.Y));
 

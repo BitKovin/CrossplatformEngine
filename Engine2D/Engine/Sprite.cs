@@ -23,10 +23,11 @@ namespace Engine
 
         public SpriteEffects effects;
 
+        public Color color = Color.White;
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, Position, null, Color.White, Rotation, Origin, Scale, effects, Math.Clamp((depth + 50000f) / 100000f, 0,1));
+            spriteBatch.Draw(texture, Position, null, color, Rotation, Origin, Scale, effects, Math.Clamp((depth + 50000f) / 100000f, 0,1));
         }
 
         public void CreateTexture(int x, int y)

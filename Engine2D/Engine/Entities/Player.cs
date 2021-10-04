@@ -59,6 +59,8 @@ namespace Engine.Entities
 
             buttonRotate.onClicked += ButtonRotate_onClicked;
 
+            sprite.color = new Color(255, 255, 255, 100);
+
         }
 
         private void ButtonRotate_onClicked()
