@@ -4,48 +4,12 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Dirt_pipo.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Dirt_pipo.tsx</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Flower_pipo.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Flower_pipo.tsx</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Grass_pipo.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Grass_pipo.tsx</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Wall-Up_pipo.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Wall-Up_pipo.tsx</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Water_pipo.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]Water_pipo.tsx</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]WaterFall_pipo.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[A]WaterFall_pipo.tsx</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[Base]BaseChip_pipo.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/[Base]BaseChip_pipo.tsx</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/block.png</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/Font.spritefont</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/LightShadow_pipo.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/LightShadow_pipo.tsx</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/samplemap.tmx</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/test.png</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/testTiles.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/testVideo.wmv</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

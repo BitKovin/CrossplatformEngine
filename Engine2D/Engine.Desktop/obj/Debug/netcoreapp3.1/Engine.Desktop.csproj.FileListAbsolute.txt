@@ -32,11 +32,9 @@ F:\GitHub\CrossplatformGameEngine\Engine\Engine.Desktop\bin\Debug\netcoreapp3.1\
 F:\GitHub\CrossplatformGameEngine\Engine\Engine.Desktop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
 F:\GitHub\CrossplatformGameEngine\Engine\Engine.Desktop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
 F:\GitHub\CrossplatformGameEngine\Engine\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\Font.xnb
-F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\testVideo.wmv
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\block.xnb
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\Font.xnb
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\test.xnb
-F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\testVideo.xnb
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Engine.Desktop.exe
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Engine.Desktop.deps.json
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Engine.Desktop.runtimeconfig.json
