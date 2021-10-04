@@ -18,6 +18,9 @@ namespace Game
             box.Position = new Vector2(0, 200);
             curentLevel.entities.Add(box);
 
+            TileMap tileMap = new TileMap();
+            curentLevel.entities.Add(tileMap);
+
             box.Start();
 
             try

@@ -9,7 +9,7 @@ namespace Engine.Network
         public static void WelcomeReceived(int playerId, Packet packet)
         {
             Console.WriteLine(playerId);
-            ServerSend.SetPlayerPos(new Microsoft.Xna.Framework.Vector2(0, 0), playerId);
+            ServerSend.SetPlayerPosTCP(new Microsoft.Xna.Framework.Vector2(0, 0), playerId);
         }
         public static void SetPlayerPos(int playerId, Packet packet)
         {

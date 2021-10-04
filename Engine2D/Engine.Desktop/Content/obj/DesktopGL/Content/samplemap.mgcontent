@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/samplemap.tmx</SourceFile>
+  <SourceTime>2021-08-24T07:06:56.7549047+03:00</SourceTime>
+  <DestFile>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/DesktopGL/Content/samplemap.xnb</DestFile>
+  <DestTime>2021-08-24T07:07:02.7045647+03:00</DestTime>
+  <Importer>TiledMapImporter</Importer>
+  <ImporterTime>2020-08-29T17:17:30+03:00</ImporterTime>
+  <Processor>TiledMapProcessor</Processor>
+  <ProcessorTime>2020-08-29T17:17:30+03:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset>
+    <string>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/DesktopGL/Content/[A]WaterFall_pipo.xnb</string>
+    <string>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/DesktopGL/Content/[Base]BaseChip_pipo_0.xnb</string>
+    <string>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/DesktopGL/Content/[A]Grass_pipo.xnb</string>
+    <string>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/DesktopGL/Content/[A]Water_pipo.xnb</string>
+    <string>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/DesktopGL/Content/[A]Flower_pipo.xnb</string>
+  </BuildAsset>
+  <BuildOutput />
+</PipelineBuildEvent>

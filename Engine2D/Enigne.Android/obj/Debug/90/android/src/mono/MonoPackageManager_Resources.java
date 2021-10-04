@@ -5,8 +5,11 @@ public class MonoPackageManager_Resources {
 		"Project2.dll",
 		"Box2DX.dll",
 		"Engine.dll",
-		"game.dll",
+		"MonoGame.Extended.dll",
+		"MonoGame.Extended.Graphics.dll",
+		"MonoGame.Extended.Tiled.dll",
 		"MonoGame.Framework.dll",
+		"Newtonsoft.Json.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

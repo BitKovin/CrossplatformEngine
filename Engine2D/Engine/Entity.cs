@@ -25,14 +25,14 @@ namespace Engine
             sprite = new Sprite();
             sprite.texture = GameMain.content.Load<Texture2D>("test");
             sprite.Position = Position;
-            sprite.Origin = new Vector2(-sprite.texture.Width / 2, -sprite.texture.Height / 2);
+            sprite.Origin = new Vector2(-sprite.texture.Width / 2, sprite.texture.Height);
             //PhysicsBody = Physics.Physics.CreateBox(0, 0, 0, 0, this);
         }
 
         public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             sprite.Position = Position;
-            sprite.Origin = new Vector2(sprite.texture.Width/2,sprite.texture.Height/2);
+            sprite.Origin = new Vector2(sprite.texture.Width/2,sprite.texture.Height);
 
 
             /* Texture2D tex = new Texture2D(GameMain.inst.GraphicsDevice, 1, 1);
@@ -44,7 +44,7 @@ namespace Engine
  */
             //spriteBatch.Draw(tex, mainRectangle, new Color(255, 255, 255,100));
 
-            sprite.depth = Position.Y;
+            sprite.depth = -Position.Y;
             sprite.Draw(gameTime, spriteBatch);
         }
 

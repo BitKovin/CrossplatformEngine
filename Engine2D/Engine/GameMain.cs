@@ -18,7 +18,7 @@ namespace Engine
 
     public class GameMain : Microsoft.Xna.Framework.Game
     {
-        SpriteFont font;
+        public SpriteFont font;
 
 
         private GraphicsDeviceManager _graphics;
@@ -39,9 +39,9 @@ namespace Engine
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            content = Content;
             IsMouseVisible = true;
             inst = this;
-            curentLevel = new Level();
             UiElement.main = UiManger;
         }
 
@@ -60,12 +60,14 @@ namespace Engine
                 _graphics.PreferredBackBufferHeight = 720;   // set this value to the desired height of your window
             }
             this.IsFixedTimeStep = true;
-            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 5000d);
+            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 200d);
             _graphics.SynchronizeWithVerticalRetrace = false;
 
             //if (platform == Platform.Mobile)
                 //_graphics.IsFullScreen = true;
             _graphics.ApplyChanges();
+
+                        curentLevel = new Level();
         }
 
 
@@ -73,7 +75,6 @@ namespace Engine
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            content = Content;
             // TODO: use this.Content to load your game content here
 
             font = Content.Load<SpriteFont>("Font"); // Use the name of your sprite font file here instead of 'Score'.
@@ -133,6 +134,8 @@ namespace Engine
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin(transformMatrix: Camera.Transform, sortMode: SpriteSortMode.BackToFront);
+
+            //GameMain.inst.curentLevel.worldTileMap.Draw(gameTime, _spriteBatch);
 
             foreach(Entity ent in curentLevel.entities)
             {

@@ -10,10 +10,12 @@ namespace Engine
 
         public Engine.Entities.Player[] players = new Entities.Player[5];
 
+        public Entities.WorldTileMap worldTileMap;
+
         public Level()
         {
             entities = new List<Entity>();
-
+            //worldTileMap = new Entities.WorldTileMap();
         }
 
         public virtual void Start()

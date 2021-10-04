@@ -19,7 +19,7 @@ namespace Enigne.Android
     )]
     public class Activity1 : AndroidGameActivity
     {
-        private Game.Game _game;
+        private Game.MyGame _game;
         private View _view;
 
 
@@ -27,10 +27,7 @@ namespace Enigne.Android
         {
             base.OnCreate(bundle);
 
-
-
-
-            _game = new Game.Game();
+            _game = new Game.MyGame();
             Engine.GameMain.platform = Engine.Platform.Mobile;
             _view = _game.Services.GetService(typeof(View)) as View;
 

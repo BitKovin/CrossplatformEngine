@@ -99,6 +99,9 @@ namespace Engine.Network
                     {
                         int _packetId = _packet.ReadInt();
                         Server.packetHandlers[_packetId](id, _packet);
+
+                        _packet.Length();
+
                     }
                 });
 

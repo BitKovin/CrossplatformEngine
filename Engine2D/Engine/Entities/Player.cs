@@ -79,18 +79,20 @@ namespace Engine.Entities
             Vector2 input = new Vector2();
             if (id != Network.GameClient.instance.id) return;
             if (buttonUp.pressing || Keyboard.GetState().IsKeyDown(Keys.W)|| buttonUpRight.pressing || buttonUpLeft.pressing)
-                Position += new Vector2(0, -100)*Time.deltaTime;
+                Position += new Vector2(0, -100)*Time.deltaTime * speed;
 
             if (buttonDown.pressing || Keyboard.GetState().IsKeyDown(Keys.S))
-                Position -= new Vector2(0, -100) * Time.deltaTime;
+                Position -= new Vector2(0, -100) * Time.deltaTime * speed;
 
             if (buttonRight.pressing || Keyboard.GetState().IsKeyDown(Keys.D) || buttonUpRight.pressing)
-                Position += new Vector2(100, 0) * Time.deltaTime;
+                Position += new Vector2(100, 0) * Time.deltaTime * speed;
 
             if (buttonLeft.pressing || Keyboard.GetState().IsKeyDown(Keys.A) || buttonUpLeft.pressing)
-                Position -= new Vector2(100, 0) * Time.deltaTime;
+                Position -= new Vector2(100, 0) * Time.deltaTime * speed;
 
             Network.ClientSend.SetPlayerPos(Position);
+
+            Camera.position = Position;
 
             if (input.Length()>0)
             {
