@@ -1,5 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/block.png","F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/Android/block.xnb","TextureProcessor","Texture2DContent",338,40085,0,1474004
-"F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/Font.spritefont","F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/Android/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2008,37922,0,1167961
-"F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/test.png","F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/Android/test.xnb","TextureProcessor","Texture2DContent",2381,6085,0,0023921
-"F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/testTiles.png","F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/Android/testTiles.xnb","TextureProcessor","Texture2DContent",3350,8549,0,0023109
+"C:/Users/bogda/Desktop/testTiles.png","F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/Android/testTiles.xnb","TextureProcessor","Texture2DContent",3605,9301,0,0020725
+"F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/block.png","F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/Android/block.xnb","TextureProcessor","Texture2DContent",338,40085,0,1486311
+"F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/Font.spritefont","F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/Android/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2008,37922,0,0999654
+"F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/test.png","F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/Android/test.xnb","TextureProcessor","Texture2DContent",2381,6085,0,0015766

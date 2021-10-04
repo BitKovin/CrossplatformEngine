@@ -14,10 +14,10 @@ namespace Engine.Entities
         public bool autoBorder;
         short[,] map;
         Vector2 size;
-        public Vector2 tileSize = new Vector2(12);
+        public Vector2 tileSize = new Vector2(13);
         List<Texture2D> tiles = new List<Texture2D>();
 
-        public TileMap(int sx = 100, int sy = 100)
+        public TileMap(int sx = 500, int sy = 500)
         {
             size = new Vector2(sx, sy);
             LoadTiles();
@@ -45,22 +45,28 @@ namespace Engine.Entities
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            for (int x = 0; x < size.X; x++)
-                for (int y = 0; y < size.Y; y++)
+            for (int x = (int)Math.Clamp(WorldToTile(Camera.position).X-60,0, size.X); x < (int)Math.Clamp(WorldToTile(Camera.position).X + 60, 0, size.X); x++)
+                for (int y = (int)Math.Clamp(WorldToTile(Camera.position).Y - 40, 0, size.Y); y < (int)Math.Clamp(WorldToTile(Camera.position).Y + 40, 0, size.Y); y++)
                 {
                     DrawTile(x, y, spriteBatch);
                 }
+            spriteBatch.DrawString(GameMain.inst.font, Camera.position.ToString(), Camera.position - new Vector2(0,100), Color.Black);
+            spriteBatch.DrawString(GameMain.inst.font, (WorldToTile(Camera.position)).ToString() , Camera.position, Color.Black);
         }
 
         void DrawTile(int x, int y, SpriteBatch spriteBatch)
         {
+
+            if (map[x, y] == 0) return;
+
+            Vector2 tileLocation = new Vector2(x * tileSize.X, y * tileSize.Y);
+            //if (Vector2.Distance(Camera.position, tileLocation) > 500) return;
             Point spriteLocation = GetTileSprite(x, y);
-            Vector2 tileLocation = new Vector2(x * tiles[map[x, y]].Width / 4 - x, y * tiles[map[x, y]].Height / 4 - y);
-            Rectangle rect = new Rectangle(spriteLocation, new Point(tiles[map[x, y]].Width / 4, tiles[map[x, y]].Height / 4));
+            Rectangle rect = new Rectangle(new Point(Math.Clamp(spriteLocation.X,0,(int)(tileSize.X*4-1)), Math.Clamp(spriteLocation.Y, 0, (int)(tileSize.Y * 4 - 1))), new Point((int)tileSize.X, (int)tileSize.Y));
             spriteBatch.Draw(tiles[map[x, y]], Position + tileLocation, rect, Color.White, 0.0f, Vector2.Zero, 1, SpriteEffects.None, 1);
         }
 
-        Point GetTileSprite(int x, int y, int size = 12)
+        Point GetTileSprite(int x, int y, int size = 13)
         {
             //return Point.Zero;
             int X,Y;
@@ -140,7 +146,9 @@ namespace Engine.Entities
         {
             Point p;
 
-            Vector2 localPos = pos - Position + tileSize*2;
+            Vector2 localPos = pos - Position;
+
+            //Vector2 localPos = pos*1.143f;
 
             p = new Point((int)(localPos.X / tileSize.X), (int)(localPos.Y / tileSize.Y));
 

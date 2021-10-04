@@ -5,13 +5,13 @@
   <Config />
   <SourceFiles>
     <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/block.png</File>
+    <File>C:/Users/bogda/Desktop/testTiles.png</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/Font.spritefont</File>
     <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/test.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/testTiles.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
-    <File xsi:nil="true" />
+    <File>testTiles.png</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>

@@ -60,7 +60,7 @@ namespace Engine
                 _graphics.PreferredBackBufferHeight = 720;   // set this value to the desired height of your window
             }
             this.IsFixedTimeStep = true;
-            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 200d);
+            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 2000d);
             _graphics.SynchronizeWithVerticalRetrace = false;
 
             //if (platform == Platform.Mobile)
@@ -152,6 +152,8 @@ namespace Engine
             _spriteBatch.End();
 
             _spriteBatch.Begin();
+
+            _spriteBatch.DrawString(font, $"FPS: {(1/gameTime.ElapsedGameTime.TotalSeconds).ToString()}", new Vector2(100, 50), Color.Black);
 
             if (Network.GameClient.instance != null)
                 _spriteBatch.DrawString(font, $"ID: {(Network.GameClient.instance.id).ToString()}", new Vector2(100, 100), Color.Black);
