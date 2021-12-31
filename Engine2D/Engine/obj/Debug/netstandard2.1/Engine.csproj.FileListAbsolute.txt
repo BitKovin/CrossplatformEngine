@@ -15,10 +15,10 @@ F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\bin\Debug\netstandard2.1\Engin
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\bin\Debug\netstandard2.1\Engine.pdb
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\bin\Debug\netstandard2.1\Box2DX.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\bin\Debug\netstandard2.1\Box2DX.pdb
-F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\obj\Debug\netstandard2.1\Engine.csprojAssemblyReference.cache
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\obj\Debug\netstandard2.1\Engine.AssemblyInfoInputs.cache
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\obj\Debug\netstandard2.1\Engine.AssemblyInfo.cs
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\obj\Debug\netstandard2.1\Engine.csproj.CoreCompileInputs.cache
-F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\obj\Debug\netstandard2.1\Engine.csproj.CopyComplete
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\obj\Debug\netstandard2.1\Engine.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\obj\Debug\netstandard2.1\Engine.pdb
+F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\obj\Debug\netstandard2.1\Engine.csproj.AssemblyReference.cache
+F:\GitHub\CrossplatformGameEngine\Engine2D\Engine\obj\Debug\netstandard2.1\Engine.GeneratedMSBuildEditorConfig.editorconfig

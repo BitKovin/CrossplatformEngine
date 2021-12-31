@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"F:/GitHub/CrossplatformGameEngine/Engine2D/Enigne.Android/Content/Font.spritefont","F:/GitHub/CrossplatformGameEngine/Engine2D/Enigne.Android/Content/bin/Android/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2008,37922,0,2304281
+"F:/GitHub/CrossplatformGameEngine/Engine2D/Enigne.Android/Content/test.png","F:/GitHub/CrossplatformGameEngine/Engine2D/Enigne.Android/Content/bin/Android/test.xnb","TextureProcessor","Texture2DContent",392,6085,0,008767

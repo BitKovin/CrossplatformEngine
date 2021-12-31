@@ -54,11 +54,9 @@ F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Engine.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Engine.pdb
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Box2DX.pdb
-F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.csprojAssemblyReference.cache
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.AssemblyInfoInputs.cache
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.AssemblyInfo.cs
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.csproj.CoreCompileInputs.cache
-F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.csproj.CopyComplete
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.pdb
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.genruntimeconfig.cache
@@ -85,3 +83,6 @@ F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\MonoGame.Extended.Tiled.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\bin\Debug\netcoreapp3.1\Content\testTiles.xnb
+F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.csproj.AssemblyReference.cache
+F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\CrossplatformGameEngine\Engine2D\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.csproj.CopyComplete

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "GzJdB8xjf3fdoiRLRfHdRDr2bkDPvC5NRgU4bJhPzbQ+E71CgqoDL6xqIpeTT72vLXbOCFiBbYTgAEgFzscOQg==",
+  "success": true,
+  "projectFilePath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Enigne.Android\\Enigne.Android.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended.graphics\\3.8.0\\monogame.extended.graphics.3.8.0.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended.tiled\\3.8.0\\monogame.extended.tiled.3.8.0.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.framework.android\\3.8.0.1641\\monogame.framework.android.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

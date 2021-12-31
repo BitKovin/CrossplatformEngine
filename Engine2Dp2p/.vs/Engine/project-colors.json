@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ac0549ad-16e7-45dd-98b9-67c4ef5ac4b4": {
+      "ProjectGuid": "ac0549ad-16e7-45dd-98b9-67c4ef5ac4b4",
+      "DisplayName": "Engine.Desktop",
+      "ColorIndex": 0
+    },
+    "18aeed65-16b3-455a-ae99-b9474b2c90b4": {
+      "ProjectGuid": "18aeed65-16b3-455a-ae99-b9474b2c90b4",
+      "DisplayName": "Engine",
+      "ColorIndex": 1
+    },
+    "c157bca5-bac7-455f-a7de-59d506d46ecf": {
+      "ProjectGuid": "c157bca5-bac7-455f-a7de-59d506d46ecf",
+      "DisplayName": "Box2DX",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

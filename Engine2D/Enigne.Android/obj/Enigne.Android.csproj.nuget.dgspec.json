@@ -8,10 +8,15 @@
       "restore": {
         "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Box2DX\\Box2DX.csproj",
         "projectName": "Box2DX",
-        "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Box2DX\\Box2DX.csproj"
+        "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Box2DX\\Box2DX.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
       },
       "frameworks": {
-        "net40": {}
+        "net48": {}
       }
     },
     "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Engine\\Engine.csproj": {
@@ -25,14 +30,12 @@
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -90,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -98,21 +101,19 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Enigne.Android\\Enigne.Android.csproj",
-        "projectName": "Enigne.Android",
+        "projectName": "Project2",
         "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Enigne.Android\\Enigne.Android.csproj",
         "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
         "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Enigne.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
