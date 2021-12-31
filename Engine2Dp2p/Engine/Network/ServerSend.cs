@@ -41,7 +41,6 @@ namespace Engine.Network
         {
             Packet packet = new Packet((int)ServerPackets.SetPlayerPos);
             packet.Write(id);
-            packet.Write(id);
             packet.Write(pos.X);
             packet.Write(pos.Y);
             SendUDPDataToAll(packet);
@@ -58,7 +57,6 @@ namespace Engine.Network
         public static void SetPlayerPosTCP(Vector2 pos, int id)
         {
             Packet packet = new Packet((int)ServerPackets.SetPlayerPos);
-            packet.Write(id);
             packet.Write(id);
             packet.Write(pos.X);
             packet.Write(pos.Y);

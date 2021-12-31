@@ -34,7 +34,6 @@ namespace Engine.Network
             {
                 ip = packet.ReadLong();
                 port = packet.ReadInt();
-                //Console.WriteLine(port);
                 list.Add(new IPEndPoint(ip, port));
             }
             
@@ -57,7 +56,6 @@ namespace Engine.Network
 
         public static void SetPlayerPos(Packet packet)
         {
-            packet.ReadInt();
             int id = packet.ReadInt();
             float X = packet.ReadFloat();
             float Y = packet.ReadFloat();

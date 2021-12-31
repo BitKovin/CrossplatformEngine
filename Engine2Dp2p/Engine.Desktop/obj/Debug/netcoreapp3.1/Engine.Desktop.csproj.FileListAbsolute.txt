@@ -139,4 +139,3 @@ F:\GitHub\CrossplatformGameEngine\Engine2Dp2p\Engine.Desktop\obj\Debug\netcoreap
 F:\GitHub\CrossplatformGameEngine\Engine2Dp2p\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.dll
 F:\GitHub\CrossplatformGameEngine\Engine2Dp2p\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.pdb
 F:\GitHub\CrossplatformGameEngine\Engine2Dp2p\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.genruntimeconfig.cache
-F:\GitHub\CrossplatformGameEngine\Engine2Dp2p\Engine.Desktop\obj\Debug\netcoreapp3.1\Engine.Desktop.csproj.CopyComplete

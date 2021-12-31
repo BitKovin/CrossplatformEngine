@@ -20,7 +20,6 @@ namespace Engine.Network
 
             Packet packet = new Packet();
             packet.Write(GameClient.instance.id);
-            packet.Write(GameClient.instance.id);
             packet.Write(pos.X);
             packet.Write(pos.Y);
             ClientSend.SendP2PPacket("PlayerPos", packet);
