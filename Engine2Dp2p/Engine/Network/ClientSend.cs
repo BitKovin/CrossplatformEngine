@@ -10,19 +10,27 @@ namespace Engine.Network
     {
         public static void SetPlayerPos(Vector2 pos)
         {
+            /*
             Packet packet = new Packet((int)ClientPackets.SetPlayerPos);
             packet.Write(pos.X);
             packet.Write(pos.Y);
             packet.WriteLength();
             GameClient.instance.udp.SendData(packet);
+            */
+
+            Packet packet = new Packet();
+            packet.Write(GameClient.instance.id);
+            packet.Write(GameClient.instance.id);
+            packet.Write(pos.X);
+            packet.Write(pos.Y);
+            ClientSend.SendP2PPacket("PlayerPos", packet);
         }
 
         public static void SendP2PPacket(string name, Packet _packet)
         {
-            Console.WriteLine("sended");
             Packet packet = new Packet((int)ServerPackets.SendP2PPacket);
             packet.Write(name);
-            packet.Write(packet.buffer.ToArray());
+            packet.Write(_packet.buffer.ToArray());
             packet.WriteLength();
             //GameClient.instance.SendTCPData(packet);
             SendUDPDataToAll(packet);
@@ -44,7 +52,6 @@ namespace Engine.Network
             foreach ( IPEndPoint endPoint in client.sessionConnections)
             {
                 GameClient.instance.udp.SendUDPData(endPoint, packet);
-                Console.WriteLine(endPoint.ToString());
             }
 
         }

@@ -60,7 +60,7 @@ namespace Engine
                 _graphics.PreferredBackBufferHeight = 720;   // set this value to the desired height of your window
             }
             this.IsFixedTimeStep = true;
-            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 200d);
+            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 20d);
             _graphics.SynchronizeWithVerticalRetrace = false;
 
             //if (platform == Platform.Mobile)

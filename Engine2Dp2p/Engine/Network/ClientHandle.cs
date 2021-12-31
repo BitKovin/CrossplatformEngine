@@ -34,7 +34,7 @@ namespace Engine.Network
             {
                 ip = packet.ReadLong();
                 port = packet.ReadInt();
-                Console.WriteLine(port);
+                //Console.WriteLine(port);
                 list.Add(new IPEndPoint(ip, port));
             }
             
@@ -45,16 +45,26 @@ namespace Engine.Network
 
         public static void ReceiveP2PPPacket(Packet packet)
         {
-            packet.ReadString();
-            Console.WriteLine("p2p packet");
+            string name = packet.ReadString();
+            switch (name) {
+                case "PlayerPos":
+                    SetPlayerPos(packet);
+                    break;
+
+            }
+
         }
 
         public static void SetPlayerPos(Packet packet)
         {
+            packet.ReadInt();
             int id = packet.ReadInt();
             float X = packet.ReadFloat();
             float Y = packet.ReadFloat();
-            if(GameMain.inst.curentLevel.players[id]==null)
+
+            Console.WriteLine(id);
+
+            if (GameMain.inst.curentLevel.players[id]==null)
             {
                 Player player = GameMain.inst.curentLevel.players[id] = new Player(id);
                 GameMain.inst.curentLevel.players[id].id = id;

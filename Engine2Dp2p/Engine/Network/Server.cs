@@ -14,7 +14,7 @@ namespace Engine.Network
         Session session = new Session();
 
         Stopwatch sw = new Stopwatch();
-        const int TPS = 2;
+        const int TPS = 60;
         int port;
         public static Server instance;
 

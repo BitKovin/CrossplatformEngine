@@ -269,7 +269,6 @@ namespace Engine.Network
             /// <param name="_data">The recieved data.</param>
             private void HandleData(byte[] _data)
             {
-                Console.WriteLine("packet");
 
                 using (Packet _packet = new Packet(_data))
                 {

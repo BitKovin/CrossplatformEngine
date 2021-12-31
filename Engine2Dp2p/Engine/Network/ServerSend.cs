@@ -11,34 +11,36 @@ namespace Engine.Network
         public static void ReturnClientsUDP(int client)
         {
 
-                Packet packet = new Packet((int)ServerPackets.ReturnClientsUDP);
+            Packet packet = new Packet((int)ServerPackets.ReturnClientsUDP);
 
-                Client requestedClient = Server.instance.clients[client];
+            Client requestedClient = Server.instance.clients[client];
 
-                List<Client> clients = requestedClient.session.clients;
+            List<Client> clients = requestedClient.session.clients;
 
-                int length = clients.Count;
+            int length = clients.Count;
 
-                for (int i = 0; i < clients.Count; i++)
-                {
-                    if (clients[i].udp.endPoint == null)
-                        length--;
-                }
+            for (int i = 0; i < clients.Count; i++)
+            {
+                if (clients[i].udp.endPoint == null)
+                    length--;
+            }
 
-                    packet.Write(length);
+            packet.Write(length);
 
-                for (int i = 0; i < clients.Count; i++) {
-                    if (clients[i].udp.endPoint == null) continue;
-                    packet.Write(clients[i].udp.endPoint.Address.Address);
-                    packet.Write(clients[i].port);
-                }
-                requestedClient.SendTCP(packet);
+            for (int i = 0; i < clients.Count; i++)
+            {
+                if (clients[i].udp.endPoint == null) continue;
+                packet.Write(clients[i].udp.endPoint.Address.Address);
+                packet.Write(clients[i].port);
+            }
+            requestedClient.SendTCP(packet);
 
         }
 
         public static void SetPlayerPos(Vector2 pos, int id)
         {
             Packet packet = new Packet((int)ServerPackets.SetPlayerPos);
+            packet.Write(id);
             packet.Write(id);
             packet.Write(pos.X);
             packet.Write(pos.Y);
@@ -56,6 +58,7 @@ namespace Engine.Network
         public static void SetPlayerPosTCP(Vector2 pos, int id)
         {
             Packet packet = new Packet((int)ServerPackets.SetPlayerPos);
+            packet.Write(id);
             packet.Write(id);
             packet.Write(pos.X);
             packet.Write(pos.Y);
