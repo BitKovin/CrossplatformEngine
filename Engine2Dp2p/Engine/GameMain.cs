@@ -6,6 +6,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using Engine.UI;
+using System.Threading;
+using System.Diagnostics;
 
 namespace Engine
 {
@@ -35,6 +37,13 @@ namespace Engine
 
         public UiElement UiManger = new UiElement();
 
+
+        Stopwatch sw = new Stopwatch();
+        const int TPS = 60;
+
+        float UpdateDelay = 1f/(float)TPS;
+
+
         public GameMain()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -60,18 +69,32 @@ namespace Engine
                 _graphics.PreferredBackBufferHeight = 720;   // set this value to the desired height of your window
             }
             this.IsFixedTimeStep = true;
-            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 20d);
+            this.TargetElapsedTime = TimeSpan.FromSeconds(1d / 200d);
             _graphics.SynchronizeWithVerticalRetrace = false;
 
             //if (platform == Platform.Mobile)
                 //_graphics.IsFullScreen = true;
             _graphics.ApplyChanges();
 
-                        curentLevel = new Level();
+            curentLevel = new Level();
+
+            //new Thread(BeginUpdateNetwork).Start();
+
         }
 
 
-
+        void BeginUpdateNetwork()
+        {
+            while (true)
+            {
+                sw.Restart();
+                foreach (Entity ent in curentLevel.entities)
+                    ent.NetworkUpdate();
+                sw.Stop();
+                float FrameTime = 1000 / TPS;
+                Thread.Sleep(Math.Clamp((int)(FrameTime - (float)sw.ElapsedMilliseconds), 0, 10000));
+            }
+        }
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
@@ -111,6 +134,14 @@ namespace Engine
                 elem.Update();
             // TODO: Add your update logic here
 
+            UpdateDelay -= Time.deltaTime;
+            if(UpdateDelay<=0)
+            {
+                foreach (Entity ent in curentLevel.entities)
+                    ent.NetworkUpdate();
+
+                UpdateDelay = 1f / TPS;
+            }
 
             base.Update(gameTime);
         }

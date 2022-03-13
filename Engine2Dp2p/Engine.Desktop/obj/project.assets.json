@@ -497,21 +497,19 @@
   },
   "packageFolders": {
     "C:\\Users\\bogda\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine.Desktop\\Engine.Desktop.csproj",
+      "projectUniqueName": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine.Desktop\\Engine.Desktop.csproj",
       "projectName": "Engine.Desktop",
-      "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine.Desktop\\Engine.Desktop.csproj",
+      "projectPath": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine.Desktop\\Engine.Desktop.csproj",
       "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-      "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine.Desktop\\obj\\",
+      "outputPath": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine.Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -529,8 +527,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj": {
-              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj"
+            "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine\\Engine.csproj": {
+              "projectPath": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine\\Engine.csproj"
             }
           }
         }
@@ -568,30 +566,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.18, 3.1.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

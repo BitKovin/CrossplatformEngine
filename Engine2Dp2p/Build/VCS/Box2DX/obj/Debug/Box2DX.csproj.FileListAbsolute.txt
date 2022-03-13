@@ -10,3 +10,9 @@ F:\GitHub\CrossplatformGameEngine\Engine2D\Build\VCS\Box2DX\obj\Debug\Box2DX.csp
 F:\GitHub\CrossplatformGameEngine\Engine2D\Build\VCS\Box2DX\obj\Debug\Box2DX.dll
 F:\GitHub\CrossplatformGameEngine\Engine2D\Build\VCS\Box2DX\obj\Debug\Box2DX.pdb
 F:\GitHub\CrossplatformGameEngine\Engine2D\Build\VCS\Box2DX\obj\Debug\Box2DX.csproj.AssemblyReference.cache
+D:\Github\CrossplatformEngine\Engine2Dp2p\Output\Box2DX.dll
+D:\Github\CrossplatformEngine\Engine2Dp2p\Output\Box2DX.pdb
+D:\Github\CrossplatformEngine\Engine2Dp2p\Build\VCS\Box2DX\obj\Debug\Box2DX.csproj.AssemblyReference.cache
+D:\Github\CrossplatformEngine\Engine2Dp2p\Build\VCS\Box2DX\obj\Debug\Box2DX.csproj.CoreCompileInputs.cache
+D:\Github\CrossplatformEngine\Engine2Dp2p\Build\VCS\Box2DX\obj\Debug\Box2DX.dll
+D:\Github\CrossplatformEngine\Engine2Dp2p\Build\VCS\Box2DX\obj\Debug\Box2DX.pdb

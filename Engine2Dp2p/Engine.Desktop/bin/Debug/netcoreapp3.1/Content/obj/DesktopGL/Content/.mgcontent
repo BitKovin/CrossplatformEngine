@@ -4,7 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2Dp2p/Engine.Desktop/bin/Debug/netcoreapp3.1/Content/test.png</File>
+    <File>D:/Github/CrossplatformEngine/Engine2Dp2p/Engine.Desktop/bin/Debug/netcoreapp3.1/Content/test.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

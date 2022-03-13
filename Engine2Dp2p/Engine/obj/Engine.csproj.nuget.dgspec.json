@@ -1,36 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj": {}
+    "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine\\Engine.csproj": {}
   },
   "projects": {
-    "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj": {
+    "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj": {
       "restore": {
-        "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj",
+        "projectUniqueName": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj",
         "projectName": "Box2DX",
-        "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj",
-        "frameworks": {
-          "net48": {
-            "projectReferences": {}
-          }
-        }
+        "projectPath": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj"
       },
       "frameworks": {
-        "net48": {}
+        "net461": {}
       }
     },
-    "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj": {
+    "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine\\Engine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj",
+        "projectUniqueName": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine\\Engine.csproj",
         "projectName": "Engine",
-        "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj",
+        "projectPath": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine\\Engine.csproj",
         "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-        "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\obj\\",
+        "outputPath": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Engine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,8 +42,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj": {
-                "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj"
+              "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj": {
+                "projectPath": "D:\\Github\\CrossplatformEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj"
               }
             }
           }
@@ -93,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

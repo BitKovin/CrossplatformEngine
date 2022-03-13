@@ -34,3 +34,16 @@ F:\GitHub\CrossplatformGameEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\En
 F:\GitHub\CrossplatformGameEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.csproj.CoreCompileInputs.cache
 F:\GitHub\CrossplatformGameEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.dll
 F:\GitHub\CrossplatformGameEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.pdb
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\bin\Debug\netstandard2.1\Engine.deps.json
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\bin\Debug\netstandard2.1\Engine.dll
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\bin\Debug\netstandard2.1\Engine.pdb
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\bin\Debug\netstandard2.1\Box2DX.dll
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\bin\Debug\netstandard2.1\Box2DX.pdb
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.csproj.AssemblyReference.cache
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.AssemblyInfoInputs.cache
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.AssemblyInfo.cs
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.csproj.CoreCompileInputs.cache
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.csproj.CopyComplete
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.dll
+D:\Github\CrossplatformEngine\Engine2Dp2p\Engine\obj\Debug\netstandard2.1\Engine.pdb

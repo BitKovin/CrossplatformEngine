@@ -58,6 +58,11 @@ namespace Engine
 
         }
 
+        public virtual void NetworkUpdate()
+        {
+
+        }
+
         public virtual void LateUpdate()
         {
 

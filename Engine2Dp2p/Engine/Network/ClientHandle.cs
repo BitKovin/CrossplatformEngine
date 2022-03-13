@@ -60,7 +60,7 @@ namespace Engine.Network
             float X = packet.ReadFloat();
             float Y = packet.ReadFloat();
 
-            Console.WriteLine(id);
+            //Console.WriteLine(id);
 
             if (GameMain.inst.curentLevel.players[id]==null)
             {

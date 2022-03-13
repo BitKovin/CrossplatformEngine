@@ -73,6 +73,13 @@ namespace Engine.Entities
             base.Start();
         }
 
+        public override void NetworkUpdate()
+        {
+            if (id != Network.GameClient.instance.id) return;
+            //base.NetworkUpdate();
+            Network.ClientSend.SetPlayerPos(Position);
+        }
+
         public override void Update()
         {
             base.Update();
@@ -92,7 +99,7 @@ namespace Engine.Entities
             if (buttonLeft.pressing || Keyboard.GetState().IsKeyDown(Keys.A) || buttonUpLeft.pressing)
                 Position -= new Vector2(100, 0) * Time.deltaTime * speed;
 
-            Network.ClientSend.SetPlayerPos(Position);
+            
 
             Camera.position = Position;
 
@@ -127,7 +134,8 @@ namespace Engine.Entities
 
 
             if (Input.pressedKeys.Contains(Keys.B))
-                Network.ClientSend.SendP2PPacket("pckt", new Network.Packet());
+                Network.ClientSend.SetPlayerPos(Position);
+            //Network.ClientSend.SendP2PPacket("pckt", new Network.Packet());
 
         }
 
