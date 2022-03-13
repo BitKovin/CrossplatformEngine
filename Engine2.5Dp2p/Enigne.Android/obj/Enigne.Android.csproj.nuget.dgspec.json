@@ -1,0 +1,151 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Enigne.Android\\Enigne.Android.csproj": {}
+  },
+  "projects": {
+    "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj": {
+      "restore": {
+        "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj",
+        "projectName": "Box2DX",
+        "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj",
+        "projectName": "Engine",
+        "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj",
+        "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
+        "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj": {
+                "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Box2DX\\Box2DX.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "MonoGame.Extended": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MonoGame.Extended.Tiled": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MonoGame.Framework.DesktopGL": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.8.0.1641, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Enigne.Android\\Enigne.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Enigne.Android\\Enigne.Android.csproj",
+        "projectName": "Project2",
+        "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Enigne.Android\\Enigne.Android.csproj",
+        "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
+        "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Enigne.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj": {
+                "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2Dp2p\\Engine\\Engine.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "MonoGame.Content.Builder.Task": {
+              "target": "Package",
+              "version": "[3.8.0.1641, )"
+            },
+            "MonoGame.Framework.Android": {
+              "target": "Package",
+              "version": "[3.8.0.1641, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6PMDtSFC/qkuUj1T+lRyRMBbSC6ya5GL4zmMEykiolGzdmPsy6gwQ2kcqMUfQtUB1YVu4yfDoq1MOkhLLViGdQ==",
+  "dgSpecHash": "yG9pTxZaUv//Ru3b3Eg8rVXdCMbqMFgzK6gaVfk9ibCLRvl5wToYL1ZDrcsog0YVRUtRXMY1vmYCL28C6KQpXQ==",
   "success": true,
-  "projectFilePath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\Engine\\Engine.csproj",
+  "projectFilePath": "D:\\Github\\CrossplatformEngine\\Engine2D\\Engine\\Engine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
     "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended.graphics\\3.8.0\\monogame.extended.graphics.3.8.0.nupkg.sha512",

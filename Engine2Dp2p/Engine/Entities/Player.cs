@@ -29,7 +29,7 @@ namespace Engine.Entities
         {
             this.id = id;
             //PhysicsBody = Physics.PhysicsManager.CreateBox(0, 0, 50, 30, this,0);
-           // PhysicsBody.FreezeRotation();
+            //PhysicsBody.FreezeRotation();
 
             if (GameMain.platform == Platform.Mobile||id == Network.GameClient.instance.id)
             {

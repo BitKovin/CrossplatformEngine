@@ -42,9 +42,6 @@ namespace Engine.Entities
             base.Start();
 
             PhysicsBody = Physics.PhysicsManager.CreateStaticBox(Position.X, Position.Y, 100, 100, this);
-
-
-
         }
 
         public override void Update()

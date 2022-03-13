@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YHqRG5SAUs094p9mgVmZz9wsD1Zzyiq/GKQURzddhleKQ4o7a6RZXWZPVFj6QPgSUw5Hxqs0kXeVM7ADwnI4wg==",
+  "dgSpecHash": "rrg+tfNxlYteOwEgd9WoucIOs3xO0W1jx6IgLYA/ZrOq19BLysiQtc7e622GrEEynXFhU7B5ZMl2EI69NwBWNg==",
   "success": true,
-  "projectFilePath": "F:\\GitHub\\CrossplatformGameEngine\\Engine2D\\game\\game.csproj",
+  "projectFilePath": "D:\\Github\\CrossplatformEngine\\Engine2D\\game\\game.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
     "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended.graphics\\3.8.0\\monogame.extended.graphics.3.8.0.nupkg.sha512",
@@ -15,7 +15,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"MonoGame.Framework.Portable 3.7.1.189\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETStandard,Version=v2.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'MonoGame.Framework.Portable 3.7.1.189' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.1'. This package may not be fully compatible with your project.",
       "libraryId": "MonoGame.Framework.Portable",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"

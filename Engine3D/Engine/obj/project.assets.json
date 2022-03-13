@@ -100,29 +100,24 @@
   },
   "packageFolders": {
     "C:\\Users\\bogda\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitHub\\CrossplatformGameEngine\\Engine3D\\Engine\\Engine.csproj",
+      "projectUniqueName": "D:\\Github\\CrossplatformEngine\\Engine3D\\Engine\\Engine.csproj",
       "projectName": "Engine",
-      "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine3D\\Engine\\Engine.csproj",
+      "projectPath": "D:\\Github\\CrossplatformEngine\\Engine3D\\Engine\\Engine.csproj",
       "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-      "outputPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine3D\\Engine\\obj\\",
+      "outputPath": "D:\\Github\\CrossplatformEngine\\Engine3D\\Engine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -135,8 +130,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "F:\\GitHub\\CrossplatformGameEngine\\Engine3D\\MGSkinnedModel\\MGSkinnedModel.csproj": {
-              "projectPath": "F:\\GitHub\\CrossplatformGameEngine\\Engine3D\\MGSkinnedModel\\MGSkinnedModel.csproj"
+            "D:\\Github\\CrossplatformEngine\\Engine3D\\MGSkinnedModel\\MGSkinnedModel.csproj": {
+              "projectPath": "D:\\Github\\CrossplatformEngine\\Engine3D\\MGSkinnedModel\\MGSkinnedModel.csproj"
             }
           }
         }
@@ -172,7 +167,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

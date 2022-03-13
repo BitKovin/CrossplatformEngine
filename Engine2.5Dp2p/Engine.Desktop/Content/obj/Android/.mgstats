@@ -1,0 +1,2 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/testTiles.png","F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/bin/Android/testTiles.xnb","TextureProcessor","Texture2DContent",3350,8549,0,7078051

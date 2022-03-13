@@ -28,7 +28,7 @@ namespace Engine.Entities
         public Player(int id = 0):base()
         {
             this.id = id;
-            //PhysicsBody = Physics.PhysicsManager.CreateBox(0, 0, 50, 30, this,0);
+            PhysicsBody = Physics.PhysicsManager.CreateBox(0, 0, 50, 30, this,0);
            // PhysicsBody.FreezeRotation();
 
             if (GameMain.platform == Platform.Mobile||id == Network.GameClient.instance.id)
@@ -77,6 +77,17 @@ namespace Engine.Entities
         {
             base.Update();
 
+            if(Input.pressedKeys.Contains(Keys.K))
+            {
+                Box2DX.Collision.Segment line = new Box2DX.Collision.Segment();
+                line.P1 = new Box2DX.Common.Vec2(Position.X, Position.Y);
+                line.P2 = new Box2DX.Common.Vec2(Position.X - 1000, Position.Y - 1000);
+                float l;
+                Box2DX.Common.Vec2 normal;
+                Physics.PhysicsManager.world.RaycastOne(line, out l, out normal, true, null);
+
+                Console.WriteLine(l);
+            }
 
             Vector2 input = new Vector2();
             if (id != Network.GameClient.instance.id) return;

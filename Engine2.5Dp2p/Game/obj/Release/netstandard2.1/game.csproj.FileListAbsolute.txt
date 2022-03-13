@@ -1,0 +1,14 @@
+F:\GitHub\CrossplatformGameEngine\Engine\game\bin\Release\netstandard2.1\game.deps.json
+F:\GitHub\CrossplatformGameEngine\Engine\game\bin\Release\netstandard2.1\game.dll
+F:\GitHub\CrossplatformGameEngine\Engine\game\bin\Release\netstandard2.1\game.pdb
+F:\GitHub\CrossplatformGameEngine\Engine\game\bin\Release\netstandard2.1\Box2DX.dll
+F:\GitHub\CrossplatformGameEngine\Engine\game\bin\Release\netstandard2.1\Engine.dll
+F:\GitHub\CrossplatformGameEngine\Engine\game\bin\Release\netstandard2.1\Box2DX.pdb
+F:\GitHub\CrossplatformGameEngine\Engine\game\bin\Release\netstandard2.1\Engine.pdb
+F:\GitHub\CrossplatformGameEngine\Engine\game\obj\Release\netstandard2.1\game.csprojAssemblyReference.cache
+F:\GitHub\CrossplatformGameEngine\Engine\game\obj\Release\netstandard2.1\game.AssemblyInfoInputs.cache
+F:\GitHub\CrossplatformGameEngine\Engine\game\obj\Release\netstandard2.1\game.AssemblyInfo.cs
+F:\GitHub\CrossplatformGameEngine\Engine\game\obj\Release\netstandard2.1\game.csproj.CoreCompileInputs.cache
+F:\GitHub\CrossplatformGameEngine\Engine\game\obj\Release\netstandard2.1\game.csproj.CopyComplete
+F:\GitHub\CrossplatformGameEngine\Engine\game\obj\Release\netstandard2.1\game.dll
+F:\GitHub\CrossplatformGameEngine\Engine\game\obj\Release\netstandard2.1\game.pdb

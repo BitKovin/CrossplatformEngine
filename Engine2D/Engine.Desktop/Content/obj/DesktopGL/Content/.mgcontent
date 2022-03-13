@@ -4,10 +4,10 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/block.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/Font.spritefont</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/test.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine2D/Engine.Desktop/Content/testTiles.png</File>
+    <File>D:/Github/CrossplatformEngine/Engine2D/Engine.Desktop/Content/block.png</File>
+    <File>D:/Github/CrossplatformEngine/Engine2D/Engine.Desktop/Content/Font.spritefont</File>
+    <File>D:/Github/CrossplatformEngine/Engine2D/Engine.Desktop/Content/test.png</File>
+    <File>D:/Github/CrossplatformEngine/Engine2D/Engine.Desktop/Content/testTiles.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

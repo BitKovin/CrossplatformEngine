@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "i+otyQs3AW8IqW6Y3luLZMfE2tF7KL79wHfiiblnWIM7U+WAVP+Y2i6drP7KN6E7Zg2see3bCtVcU6/I4BZIcg==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\CrossplatformEngine\\Engine2.5Dp2p\\Engine\\Engine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended.graphics\\3.8.0\\monogame.extended.graphics.3.8.0.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.extended.tiled\\3.8.0\\monogame.extended.tiled.3.8.0.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

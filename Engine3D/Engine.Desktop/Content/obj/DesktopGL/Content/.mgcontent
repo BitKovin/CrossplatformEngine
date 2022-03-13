@@ -4,12 +4,12 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/block.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/Font.spritefont</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/test.png</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/testModel.fbx</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/testModel2.fbx</File>
-    <File>F:/GitHub/CrossplatformGameEngine/Engine3D/Engine.Desktop/Content/testVideo.wmv</File>
+    <File>D:/Github/CrossplatformEngine/Engine3D/Engine.Desktop/Content/block.png</File>
+    <File>D:/Github/CrossplatformEngine/Engine3D/Engine.Desktop/Content/Font.spritefont</File>
+    <File>D:/Github/CrossplatformEngine/Engine3D/Engine.Desktop/Content/test.png</File>
+    <File>D:/Github/CrossplatformEngine/Engine3D/Engine.Desktop/Content/testModel.fbx</File>
+    <File>D:/Github/CrossplatformEngine/Engine3D/Engine.Desktop/Content/testModel2.fbx</File>
+    <File>D:/Github/CrossplatformEngine/Engine3D/Engine.Desktop/Content/testVideo.wmv</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

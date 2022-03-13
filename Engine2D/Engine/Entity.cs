@@ -32,7 +32,7 @@ namespace Engine
         public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             sprite.Position = Position;
-            sprite.Origin = new Vector2(sprite.texture.Width/2,sprite.texture.Height);
+            sprite.Origin = new Vector2(sprite.texture.Width/2,sprite.texture.Height/2);
 
 
             /* Texture2D tex = new Texture2D(GameMain.inst.GraphicsDevice, 1, 1);
